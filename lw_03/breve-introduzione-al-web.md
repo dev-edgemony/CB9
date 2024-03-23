@@ -22,7 +22,7 @@ Nel suo complesso, il web è quindi una grande rete di computer connessi tra lor
 
 Se tutti i computer connessi alla rete scambiano documenti tra loro, significa che qualunque computer può richiedere documenti al mio computer? Non esattamente.
 
-Nella maggior parte dei casi – e sicuramente nei casi più utili per noi – uno o più computer possono richiedere delle risorse, e uno (o più) computer possono fornirle, ma **non si tratta mai degli stessi computer**. In maniera schematica, la condivisione di risorse avviene tra un computer che le richide, il _client_, e uno che le fornisce, il _server_. Questo sistema (_client_/_server_) è quello che fa funzionare il web per come compreso dalla maggior parte delle persone.
+Nella maggior parte dei casi – e sicuramente nei casi più utili per noi – uno (o più) computer richiede delle risorse, e uno (o più) computer può fornirle, ma **non si tratta mai degli stessi computer**. In maniera molto schematica, la condivisione di risorse avviene tra un computer che le richide, il _client_, e uno che le fornisce, il _server_. Questo sistema (_client_/_server_) è quello che fa funzionare il web per come compreso dalla maggior parte delle persone.
 
 ![](../images/lw_03-the-web-client-server.jpg)
 
