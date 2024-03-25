@@ -2,9 +2,9 @@
 
 > 2024/03/25 - 2024/03/28
 
-##### La so!
+#### Learning goals
 
-Potrai ritenere di aver completato con successo questo modulo, quando sarai in grado di:
+Potrai ritenere di aver completato con successo questo modulo quando sarai in grado di:
 
 1. [Spiegare come funziona il web](./breve-introduzione-al-web.md) a grandi linee
 1. [Descrivere il viaggio di una richiesta web](./il-viaggio-di-una-richiesta-web.md)
