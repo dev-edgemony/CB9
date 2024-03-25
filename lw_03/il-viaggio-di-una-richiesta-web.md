@@ -36,12 +36,12 @@ Così come server e client non lavorano allo stesso modo, back-end e front-end
 non condividono sempre le stesse competenze e responsabilità. Proviamo a
 individuarne alcune, prendendo l'esembio emblematico di creare una pagina web.
 
-### Una seconda differenza: pagina statica e pagina dinamica
-
 Da questo momento, faremo riferimento alle operazioni citate in precedenza con:
 Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo
 ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non
 sono utili.
+
+### Una seconda differenza: pagina statica e pagina dinamica
 
 Quando richiediamo una pagina web, questa può già esistere all'interno del
 server, tipicamente come pagina HTML (ad es., `index.html`). Il compito del
@@ -86,12 +86,29 @@ alcuni casi, lo scenario sarà più simile a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-fe-ii.jpg)
 
-### Una tabella, per riassumere
+Probabilmente, **il caso più comune** è quello misto, ovvero quello nel quale il
+server restituisce una pagina (dinamica o statica) la quale contiene ulteriori
+istruzioni per essere poi modificata dal client nel corso della sua vita.
+Qualcosa del genere,
 
-|        | Dinamica | Statica |
-| ------ | -------- | ------- |
-| Server | 🟢       | 🟢      |
-| Client | 🟢       | 🔴      |
+![](../images/lw_03-request-journey-mix.jpg)
+
+### Per riassumere, e una tabella
+
+Client e server hanno storicamente avuto responsabilità diverse. Il primo
+richiede le risorse, l'altro le restituisce; il primo le legge e interpreta,
+l'altro le crea. In anni più recenti, entrambi hanno iniziato a condividere la
+responsabilità di creare una pagina web. Ciò ha reso il lavoro di Back-end e
+Front-end engineers sicuramente più complesso, ma anche più gratificante,
+considerando le moltemplici possibilità offerte.
+
+|        | Dinamica | Statica | Misto |
+| ------ | -------- | ------- | ----- |
+| Server | 🟢       | 🟢      | 🟢    |
+| Client | 🟢       | 🔴      | 🟢    |
+
+Il resto del Bootcamp si concentrerà sugli strumenti che permettono di creare
+pagine web lato client.
 
 ## Link per approfondire
 
