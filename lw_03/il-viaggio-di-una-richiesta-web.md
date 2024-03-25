@@ -20,11 +20,17 @@ Così come server e client non lavorano allo stesso modo, back-end e front-end n
 
 ### Una seconda differenza: pagina statica e pagina dinamica
 
-Quando richiediamo una pagina web, questa può già esistere all'interno del server, tipicamente come pagina HTML (ad es., `index.html`). Il compito del server sarà allora quello di trovarla, e restituirla.
+Quando richiediamo una pagina web, questa può già esistere all'interno del server, tipicamente come pagina HTML (ad es., `index.html`). Il compito del server sarà allora quello di trovarla, e restituirla. In questo caso, la pagina web è statica, e ciò che accade somiglia a qualcosa del genere,
+
+![](../images/lw_03-request-journey-be.jpg)
+
+In un secondo caso, la pagina HTML non esiste sul server. In altre parole, se andassimo a cercare sul server, non troveremmo alcuna `index.html`. Quello che esiste, invece, è un documento che il server usa come base per **creare in maniera dinamica** la pagina richiesta. Nella pratica, ci sono molti modi di realizzare questa cosa. In termini astratti, possiamo immaginare questo documento come contenent del codice scritto in un linguaggio che il server può capire (ad es., _JavaScript_, _PHP_, ecc.). Il codice fornisce le istruzioni che il server seguirà per generare il documento finale da restituire. In questo caso, la pagina web è generata in maniera dinamica. Ciò che accade somiglia a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be-ii.jpg)
 
-### Una seconda differenza: generazione lato server e lato client
+Fin qui, abbiamo descritto come il server genera pagine statiche o dinamiche.
+
+### Una terza differenza: generazione lato server e lato client
 
 Da questo momento, faremo riferimento alle operazioni citate in precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non sono utili.
 
@@ -35,4 +41,5 @@ Da questo momento, faremo riferimento alle operazioni citate in precedenza con: 
 > leggi **solo se hai una domanda** per la quale cerchi una risposta. Una volta trovata, **fermati**.
 > Troverai sempre qui questi link, così da visitarli al momento guisto.
 
+1.
 1.
