@@ -32,52 +32,53 @@ interessano più da vicino. Infatti, il risultato di queste dipende in grossa
 parte dal lavoro svolto dalle figure conosciute come _Front-end engineers_ (o
 developers, ecc.).
 
-Così come server e client non lavorano allo stesso modo, back-end e front-end
-non condividono sempre le stesse competenze e responsabilità. Proviamo a
-individuarne alcune, prendendo l'esembio emblematico di creare una pagina web.
+Così come _server_ e _client_ non lavorano allo stesso modo, _back-end_ e
+_front-end_ engineers non condividono sempre le stesse competenze e
+responsabilità. Proviamo a individuarne alcune, prendendo l'esembio emblematico
+di creare una pagina web.
 
-Da questo momento, faremo riferimento alle operazioni citate in precedenza con:
-Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo
-ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non
-sono utili.
+**Nota**: Da questo momento, faremo riferimento alle operazioni citate in
+precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di
+così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che,
+per adesso, non sono utili.
 
 ### Una seconda differenza: pagina statica e pagina dinamica
 
 Quando richiediamo una pagina web, questa può già esistere all'interno del
-server, tipicamente come pagina HTML (ad es., `index.html`). Il compito del
-server sarà allora quello di trovarla, e restituirla. In questo caso, la pagina
-web è statica, e ciò che accade somiglia a qualcosa del genere,
+_server_, tipicamente come pagina HTML (ad es., `index.html`). Il compito del
+_server_ sarà allora quello di trovarla, e restituirla. In questo caso, la
+pagina web è statica, e ciò che accade somiglia a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be.jpg)
 
-In un secondo caso, la pagina HTML non esiste sul server. In altre parole, se
-andassimo a cercare sul server, non troveremmo alcuna `index.html`. Quello che
-esiste, invece, è un documento che il server usa come base per **creare in
+In un secondo caso, la pagina HTML non esiste sul _server_. In altre parole, se
+andassimo a cercare sul _server_, non troveremmo alcuna `index.html`. Quello che
+esiste, invece, è un documento che il _server_ usa come base per **creare in
 maniera dinamica** la pagina richiesta. Nella pratica, ci sono molti modi di
 realizzare questa cosa. In termini astratti, possiamo immaginare questo
-documento come contenent del codice scritto in un linguaggio che il server può
+documento come contenent del codice scritto in un linguaggio che il _server_ può
 capire (ad es., _JavaScript_, _PHP_, ecc.). Il codice fornisce le istruzioni che
-il server seguirà per generare il documento finale da restituire. In questo
+il _server_ seguirà per generare il documento finale da restituire. In questo
 caso, la pagina web è generata in maniera dinamica. Ciò che accade somiglia a
 qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be-ii.jpg)
 
-Fin qui, abbiamo descritto come il server genera pagine statiche o dinamiche.
+Fin qui, abbiamo descritto come il _server_ genera pagine statiche o dinamiche.
 
-### Una terza differenza: generazione lato server e lato client
+### Una terza differenza: generazione lato _server_ e lato _client_
 
 Che sia dinamica o statica, nei casi descritti finora, la pagine viene generata
-dal server. Nel caso più semplice possibile, il client (ossia, il browser) si
-limiterà a svolgere le operazioni per visualizzare la pagina. Queste vengono
+dal _server_. Nel caso più semplice possibile, il _client_ (ossia, il browser)
+si limiterà a svolgere le operazioni per visualizzare la pagina. Queste vengono
 anche chiamate **processi di render**. Sono processi molto interessanti ai quali
 faremo accenno, senza andare nello specifico, più avanti nel corso di volta in
 volta, in base alle necessità.
 
-Tuttavia, il client può anche essere responsabile della stessa generazione della
-pagina web. In questo caso, potremmo dire quasi per definiziione, la pagina è
-sempre generata in maniera dinamica. In uno scenario tipico di generazione lato
-client, quindi, avviene qualcosa del genere,
+Tuttavia, il _client_ può anche essere responsabile della stessa generazione
+della pagina web. In questo caso, potremmo dire quasi per definiziione, la
+pagina è sempre generata in maniera dinamica. In uno scenario tipico di
+generazione lato _client_, quindi, avviene qualcosa del genere,
 
 ![](../images/lw_03-request-journey-fe.jpg)
 
@@ -87,15 +88,15 @@ alcuni casi, lo scenario sarà più simile a qualcosa del genere,
 ![](../images/lw_03-request-journey-fe-ii.jpg)
 
 Probabilmente, **il caso più comune** è quello misto, ovvero quello nel quale il
-server restituisce una pagina (dinamica o statica) la quale contiene ulteriori
-istruzioni per essere poi modificata dal client nel corso della sua vita.
+_server_ restituisce una pagina (dinamica o statica) la quale contiene ulteriori
+istruzioni per essere poi modificata dal _client_ nel corso della sua vita.
 Qualcosa del genere,
 
 ![](../images/lw_03-request-journey-mix.jpg)
 
 ### Per riassumere, e una tabella
 
-Client e server hanno storicamente avuto responsabilità diverse. Il primo
+_Client_ e _server_ hanno storicamente avuto responsabilità diverse. Il primo
 richiede le risorse, l'altro le restituisce; il primo le legge e interpreta,
 l'altro le crea. In anni più recenti, entrambi hanno iniziato a condividere la
 responsabilità di creare una pagina web. Ciò ha reso il lavoro di Back-end e
@@ -108,7 +109,7 @@ considerando le moltemplici possibilità offerte.
 | Client | 🟢       | 🔴      | 🟢    |
 
 Il resto del Bootcamp si concentrerà sugli strumenti che permettono di creare
-pagine web lato client. Prima di questo però, sarà bene
+pagine web lato _client_. Prima di questo però, sarà bene
 [occuparsi di Git](usare-git.md), uno strumento fondamentale nella carriera di
 software engineer.
 
