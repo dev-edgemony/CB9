@@ -6,11 +6,11 @@
 
 ### Contenuti delle Learning Week
 
-| LW  | Argomenti                 | Reading Material                  | Esercitazioni |
-| --- | ------------------------- | --------------------------------- | ------------- |
-| 1   | HTML & CSS                | _tba_                             | _tba_         |
-| 2   | HTML & CSS                | _tba_                             | _tba_         |
-| 3   | Introduzione al web a GIT | [Material LW3](./lw_03/README.md) | _tba_         |
+| LW  | Argomenti                 | Reading Material                   | Esercitazioni |
+| --- | ------------------------- | ---------------------------------- | ------------- |
+| 1   | HTML & CSS                | _tba_                              | _tba_         |
+| 2   | HTML & CSS                | _tba_                              | _tba_         |
+| 3   | Introduzione al web a GIT | [Materiali LW3](./lw_03/README.md) | _tba_         |
 
 ### Qualche parola di incoraggiamento
 
