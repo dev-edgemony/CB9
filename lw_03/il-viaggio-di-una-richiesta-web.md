@@ -108,7 +108,9 @@ considerando le moltemplici possibilità offerte.
 | Client | 🟢       | 🔴      | 🟢    |
 
 Il resto del Bootcamp si concentrerà sugli strumenti che permettono di creare
-pagine web lato client.
+pagine web lato client. Prima di questo però, sarà bene
+[occuparsi di Git](usare-git.md), uno strumento fondamentale nella carriera di
+software engineer.
 
 ## Link per approfondire
 
