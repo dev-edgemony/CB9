@@ -38,9 +38,9 @@ responsabilità. Proviamo a individuarne alcune, prendendo l'esembio emblematico
 di creare una pagina web.
 
 **Nota**: Da questo momento, faremo riferimento alle operazioni citate in
-precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di
-così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che,
-per adesso, non sono utili.
+precedenza con la formula "creare una pagina web" o simili. Di certo, le cose
+sono più complesse di così, ma questo ci aiuta ad afferrare l'essenziale
+tralasciando i dettagli che, per adesso, non sono utili.
 
 ### Una seconda differenza: pagina statica e pagina dinamica
 
