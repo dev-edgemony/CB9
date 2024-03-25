@@ -12,17 +12,21 @@ Tipicamente, il _client_ che inizia la richiesta è il browser. Nei casi più co
 
 ![](../images/lw_03-request-journey-be.jpg)
 
-Da un lato abbiamo il _server_, che si occupa di procurare il documento tramite una serie di operazioni che possono anche variare in base al tipo di risorsa richiesta (ad es., come è stata creata, salvata, ecc.). I dettagli di queste operazioni sono molto interessanti, ma ci porterebero molto lontano, ed esulano dall'ambito del corso. La programmazione di queste operazioni è solitamente responsabilità delle figure conosciute come _Back-end engineers_ (o developers, ecc.).
+Da un lato abbiamo il _server_, che si occupa di procurare il documento tramite una serie di operazioni che possono variare in base al tipo di risorsa richiesta (ad es., come è stata creata, salvata, ecc.). I dettagli di queste operazioni sono molto interessanti, ma ci porterebero molto lontano, ed esulano dall'ambito del corso. La programmazione di queste operazioni è solitamente responsabilità delle figure conosciute come _Back-end engineers_ (o developers, ecc.).
 
-Dall'altro lato abbiamo il _client_, ovvver il browser, il quale esegue le operazioni (ad es., legge, interpreta, ecc) che permettono a noi di vedere il documento ricevuto come "la homepage di Edgemony". Le operazioni del browser ci interessano più da vicino. Infatti, il risultato di queste dipende in grossa parte dal lavoro svolto da quelle figure conosciute come _Front-end engineers_ (o developers, ecc.).
+Dall'altro lato abbiamo il _client_, ovvero il browser, il quale esegue tutte le operazioni (ad es., legge, interpreta, ecc.) che ci permettono di vedere il documento ricevuto come "la homepage di Edgemony". Le operazioni del browser ci interessano più da vicino. Infatti, il risultato di queste dipende in grossa parte dal lavoro svolto dalle figure conosciute come _Front-end engineers_ (o developers, ecc.).
 
-Così come server e client non lavorano allo stesso modo, back-end e front-end non condividono sempre le stesse competenze e responsabilità.
+Così come server e client non lavorano allo stesso modo, back-end e front-end non condividono sempre le stesse competenze e responsabilità. Proviamo a individuarne alcune, prendendo l'esembio emblematico di creare una pagina web.
 
-### Creare una pagina web
+### Una seconda differenza: pagina statica e pagina dinamica
 
-Da questo momento, faremo riferimento alle operazioni citate in precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non sono utili.
+Quando richiediamo una pagina web, questa può già esistere all'interno del server, tipicamente come pagina HTML (ad es., `index.html`). Il compito del server sarà allora quello di trovarla, e restituirla.
+
+![](../images/lw_03-request-journey-be-ii.jpg)
 
 ### Una seconda differenza: generazione lato server e lato client
+
+Da questo momento, faremo riferimento alle operazioni citate in precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non sono utili.
 
 ##### Link per approfondire
 

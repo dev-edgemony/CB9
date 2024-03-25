@@ -19,4 +19,4 @@ Il contenuto di ciascun punto sopra è una guida per la discussione frontale, pi
 
 ### Completato?
 
-Benissimo! Vai alla [LW4](../lw_04/README.md)
+Benissimo! Vai alla [LW4](../lw_04/README.md).

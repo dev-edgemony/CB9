@@ -14,4 +14,4 @@ Potrai ritenere di aver completato con successo questo modulo quando sarai in gr
 
 ### Completato?
 
-Benissimo! Vai alla [LW5](../lw_05/README.md)
+Benissimo! Vai alla [LW5](../lw_05/README.md).

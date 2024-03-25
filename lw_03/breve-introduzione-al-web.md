@@ -10,7 +10,7 @@ L'idea alla base del web è quella di due (o più) computer che condividono acce
 
 La comunicazione tra i computer si basa su degli accordi, chiamati protocolli. I protocolli hanno diversi scopi per i quali stabiliscono delle regole di comportamento. Ad esempio, è sempre richiesta _una stretta di mano_ tra due computer per rendere affidabile la loro connessione. Un'altra regola è che quando Computer A chiede un documento a Computer B, quest'ultimo glielo spedisca tramite pacchetti numerati in maniera sequenziale. In questa maniera, Computer A saprà come rimettere tutto nell'ordine corretto, e la trasmissione di informazioni sarà affidabile.
 
-In altre parole, è un po' come l'[alfabeto farfallino](https://it.wikipedia.org/wiki/Alfabeto_farfallino). Se immaginiamo che Computer A abbia chiesto a Computer B il testo di [Anti-Hero di Taylor Swift](https://it.wikipedia.org/wiki/Anti-Hero),
+In altre parole, è un po' come l'[alfabeto farfallino](https://it.wikipedia.org/wiki/Alfabeto_farfallino). Se immaginiamo che Computer A abbia chiesto a Computer B il testo di [Anti-Hero di Taylor Swift](https://it.wikipedia.org/wiki/Anti-Hero), il risultato potrebbe somigliare a questo
 
 ![](../images/lw_03-the-web-packages.jpg)
 
