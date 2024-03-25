@@ -51,18 +51,28 @@ pagina web è statica, e ciò che accade somiglia a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be.jpg)
 
-In un secondo caso, la pagina HTML non esiste sul _server_. In altre parole, se
-andassimo a cercare sul _server_, non troveremmo alcuna `index.html`. Quello che
-esiste, invece, è un documento che il _server_ usa come base per **creare in
-maniera dinamica** la pagina richiesta. Nella pratica, ci sono molti modi di
-realizzare questa cosa. In termini astratti, possiamo immaginare questo
-documento come contenent del codice scritto in un linguaggio che il _server_ può
-capire (ad es., _JavaScript_, _PHP_, ecc.). Il codice fornisce le istruzioni che
-il _server_ seguirà per generare il documento finale da restituire. In questo
-caso, la pagina web è generata in maniera dinamica. Ciò che accade somiglia a
-qualcosa del genere,
+In questi casi, non è sempre chiaro chi tra BE o FE si occupa di scrivere la
+pagina. In altre parole, il lavoro potrebbe essere svolto da entambe le figure
+(a patto che conoscano l'HTML). Vale la pena di dire questo: è un caso più unico
+che raro. Ovvero, quasi nessuna figura professionale scrive le pagine HTML a
+mano.
+
+In un secondo caso, **la pagina HTML non esiste** sul _server_. In altre parole,
+se andassimo a cercare sul _server_, non troveremmo alcuna `index.html`. Quello
+che esiste, invece, è uno o più documenti che il _server_ utilizza come base per
+**creare in maniera dinamica** la pagina richiesta.
+
+Nella pratica, ci sono molti modi di realizzare questa cosa. In termini
+astratti, possiamo immaginare questi documenti come contenente del codice
+scritto in un linguaggio che il _server_ può capire (ad es., _JavaScript_,
+_PHP_, ecc.). Il **codice fornisce le istruzioni** che il _server_ seguirà per
+generare il documento finale da restituire. In questo caso, la pagina web è
+generata in maniera dinamica. Ciò che accade somiglia a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be-ii.jpg)
+
+Questo caso è più vicino ad alcune realtà professionali e, si può dire,
+coinvolge più lavoro BE che FE.
 
 Fin qui, abbiamo descritto come il _server_ genera pagine statiche o dinamiche.
 
@@ -87,12 +97,22 @@ alcuni casi, lo scenario sarà più simile a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-fe-ii.jpg)
 
+Entrambi i casi sono più vicini ad alcune realtà professionali e, si può dire,
+coinvolge più lavoro FE che BE.
+
 Probabilmente, **il caso più comune** è quello misto, ovvero quello nel quale il
 _server_ restituisce una pagina (dinamica o statica) la quale contiene ulteriori
 istruzioni per essere poi modificata dal _client_ nel corso della sua vita.
 Qualcosa del genere,
 
 ![](../images/lw_03-request-journey-mix.jpg)
+
+BE e FE qui lavorano spesso in stretta collaborazione. Ogni ruolo può avere
+diverse responsabilità (anche in base alle competenze). In molti casi, tuttavia,
+è difficile dire dove finisca uno e inizia l'altro. Per questa ragione, un terzo
+ruolo molto comune è quello di _Full-stack engineers_ (o developers, ecc.),
+ovvero figure professionali che hanno competenze per lavorare lungo tutta la
+linea da FE o BE.
 
 ### Per riassumere, e una tabella
 
@@ -127,3 +147,5 @@ software engineer.
 1. [Cosa è un browser](https://it.wikipedia.org/wiki/Browser) su Wikipedia
 1. [I processi di render del browser](https://developer.chrome.com/blog/inside-browser-part3)
    su Chrome for Developers (in inglese)
+1. [La figura del Full-stack engineer](https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer)
+   su Wikipedia (in inglese)
