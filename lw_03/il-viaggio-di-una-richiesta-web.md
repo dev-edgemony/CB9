@@ -41,5 +41,5 @@ Da questo momento, faremo riferimento alle operazioni citate in precedenza con: 
 > leggi **solo se hai una domanda** per la quale cerchi una risposta. Una volta trovata, **fermati**.
 > Troverai sempre qui questi link, così da visitarli al momento guisto.
 
-1.
-1.
+1. [Index](<https://it.wikipedia.org/wiki/Index_(informatica)>) su Wikipedia
+1. [Cosa è un browser](https://it.wikipedia.org/wiki/Browser) su Wikipedia
