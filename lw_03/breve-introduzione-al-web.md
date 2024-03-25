@@ -28,7 +28,7 @@ Nella maggior parte dei casi – e sicuramente nei casi più utili per noi – u
 
 In [questa sezione](./il-viaggio-di-una-richiesta-web.md), trovi qualche dettaglio in più su come avviene una richiesta web.
 
-##### Link per approfondire
+## Link per approfondire
 
 > **FOMO warning!** La curiosità è una cosa bella, ma non perdi nulla di essenziale se non visiti le pagine seguenti. <br /> **Rabbit Hole warning**
 > Uno degli errori più fatali è quello di cominciare a leggere senza mai fermarsi. <br /> Prova a seguire questa linea guida:

@@ -34,7 +34,7 @@ Fin qui, abbiamo descritto come il server genera pagine statiche o dinamiche.
 
 Da questo momento, faremo riferimento alle operazioni citate in precedenza con: Creare una pagina web. Di certo, le cose sono più complesse di così, ma questo ci aiuta ad afferrare l'essenziale tralasciando i dettagli che, per adesso, non sono utili.
 
-##### Link per approfondire
+## Link per approfondire
 
 > **FOMO warning!** La curiosità è una cosa bella, ma non perdi nulla di essenziale se non visiti le pagine seguenti. <br /> **Rabbit Hole warning**
 > Uno degli errori più fatali è quello di cominciare a leggere senza mai fermarsi. <br /> Prova a seguire questa linea guida:
