@@ -8,7 +8,7 @@ La [breve introduzione al web](./breve-introduzione-al-web.md) considera il sist
 
 ### Una prima differenza: back-end e front-end
 
-Tipicamente, il _client_ che inizia la richiesta è il browser. Nei casi più comuni, la richeista restituisce un documento. Se fate click su <a href="https://edgemony.com/" target="_blank">https://edgemony.com/</a>, una buona approssimazione iniziale del viaggio della richiesta somiglia a qualcosa del genere,
+Tipicamente, il _client_ che inizia la richiesta è il browser. Nei casi più comuni, la richeista restituisce un documento. Se fate click su <a href="https://edgemony.com/" target="_blank">edgemony.com/</a>, una buona approssimazione iniziale del viaggio della richiesta somiglia a qualcosa del genere,
 
 ![](../images/lw_03-request-journey-be.jpg)
 
