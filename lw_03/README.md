@@ -1,8 +1,13 @@
-# Coding Bootcamp 9 – Learning Week 3 – Fondamenti del web e Git
+# Coding Bootcamp 9 – Learning Week 3 – Introduzione al web e Git
 
 > 2024/03/25 - 2024/03/28
 
-#### Learning goals
+Nella LW3 ci occupiamo principlamente di:
+
+1. Introdurre alcuni aspetti del web e dello sviluppo web.
+1. Esercitarci all'utilizzo di `git`, strumento fondamentale nella carriera di software engineer.
+
+### Learning goals
 
 Potrai ritenere di aver completato con successo questo modulo quando sarai in grado di:
 
@@ -11,3 +16,7 @@ Potrai ritenere di aver completato con successo questo modulo quando sarai in gr
 1. [Usare a `git`](./usare-git.md), per salvare e condividere il nostro lavoro
 
 Il contenuto di ciascun punto sopra è una guida per la discussione frontale, più dettagliata. Può essere utile come promemoria.
+
+### Completato?
+
+Benissimo! Vai alla [LW4](../lw_04/README.md)
