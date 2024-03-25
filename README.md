@@ -15,7 +15,8 @@
 ### Qualche parola di incoraggiamento
 
 Imparare lo sviluppo del software può essere un'impresa difficile. Tuttavia, con gli strumenti e la guida giusta diventa anche divertente – e, soprattutto, fattibile!
-<br/> Questo programma è pensato a supporto della tua ambizione, e non si sostituisce alla tua dedizione e allo studio personale.
+
+Questo programma è pensato a supporto della tua ambizione, e non si sostituisce alla tua dedizione e allo studio personale.
 
 Qualunque cosa tu pensi sia migliorabile, non esitare e fare suggerimenti (nota: Nel corso del programma, ti sarà anche spiegato come farlo).
 
