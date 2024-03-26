@@ -86,6 +86,27 @@ parole, qualcosa del genere,
 
 ![](../images/lw_03-git-commands-apples.jpg)
 
+Proviamo a uscire dall'analogia delle mele, e parlare di file. Il flusso di
+lavoro in tre step somiglia a qualcosa del genere,
+
+![](../images/lw_03-git-commands-files.jpg)
+
+Ogni passaggio corrisponde a uno stato (i colori sono scelti in modo casuale):
+
+1. in giallo, i file sono nello stato _modified_
+1. in rosso, i file sono nello stato _staged_
+1. in verde, i file sono nello stato _committed_
+
+Quale è il quarto stato? In effetti, sarebbe lo stato iniziale, ovvero, ad es.,
+lo stato di quando abbiamo clonato la _repository_. Tuttavia, poiché anche una
+_repository_ al suo inizio deve avere almeno un _commit_, possiamo pensare allo
+stato iniziale e allo stato _committed_ come sostanzialmente lo stesso stato.
+
+Una sequenza temporale di _commit_ ci restituirà una immagine come quella vista
+all'inizio, qualcosa del genere,
+
+![](../images/lw_03-git-timeline.jpg)
+
 ## Link per approfondire
 
 > **FOMO warning!** La curiosità è una cosa bella, ma non perdi nulla di
