@@ -13,7 +13,7 @@ genere,
 ![](../images/lw_03-git-timeline-books.jpg)
 
 Nel gergo di Git, la linea temporale è detta `branch`, mentre l'instantane è
-chiamata `commit`. L'immagine sopra, diventa qualcosa del genere,
+chiamata `commit`. L'immagine sopra diventa qualcosa del genere,
 
 ![](../images/lw_03-git-timeline.jpg)
 
