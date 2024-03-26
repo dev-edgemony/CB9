@@ -60,14 +60,14 @@ fine, esiste un flusso di lavoro.
 Prima di trattare il flusso di lavoro, è utile trattare i tre stati (più uno)
 nei quali i file di una _repository_ locale si possono trovare.
 
-### Tre stati, più uno
+### Il flusso di lavoro Git in tre step
 
 Non appena clonata, la _repository_ locale è identica a quella remota. In
 particolare, rappresenta al sua stessa storia, la sequenza di _commit_ alla
 quale accennavamo [in precedenza](#cosa-è-git).
 
-Apportare una modifica richiede un flusso in tre step. Per iniziare, possiamo
-immaginarlo come qualcosa del genere,
+Apportare una modifica richiede **un flusso di lavoro in tre step**. Per
+iniziare, possiamo immaginarlo come qualcosa del genere,
 
 ![](../images/lw_03-git-flow.jpg)
 
@@ -85,6 +85,8 @@ sapere _cosa_ vogliamo aggiungere e _cosa_ stiamo impacchettando. In altre
 parole, qualcosa del genere,
 
 ![](../images/lw_03-git-commands-apples.jpg)
+
+### Tre stati, più uno
 
 Proviamo a uscire dall'analogia delle mele, e parlare di file. Il flusso di
 lavoro in tre step somiglia a qualcosa del genere,
@@ -112,6 +114,12 @@ all'inizio, qualcosa del genere,
 
 [Qui](https://github.com/dev-edgemony/CB9/blob/main/lw_03/esercitazioni/README.md#2-il-mio-primo-commit)
 trovi una esercitazione utile.
+
+### Modificare la repository remota
+
+Una volta completato il flusso in tre step, abbiamo ottenuto che la nostra
+_repository_ locale è stata modificata. Ma come facciamo a modificare quella
+remota?
 
 ## Link per approfondire
 
