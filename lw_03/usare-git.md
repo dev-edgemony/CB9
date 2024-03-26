@@ -102,10 +102,16 @@ lo stato di quando abbiamo clonato la _repository_. Tuttavia, poiché anche una
 _repository_ al suo inizio deve avere almeno un _commit_, possiamo pensare allo
 stato iniziale e allo stato _committed_ come sostanzialmente lo stesso stato.
 
+> **Nota**: in qualunque momento, puoi interrograre lo stato della _repository_
+> usando `git status`.
+
 Una sequenza temporale di _commit_ ci restituirà una immagine come quella vista
 all'inizio, qualcosa del genere,
 
 ![](../images/lw_03-git-timeline.jpg)
+
+[Qui](https://github.com/dev-edgemony/CB9/blob/main/lw_03/esercitazioni/README.md#2-il-mio-primo-commit)
+trovi una esercitazione utile.
 
 ## Link per approfondire
 
