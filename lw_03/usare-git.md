@@ -33,14 +33,27 @@ stai navigando adesso.
 
 ### Remota e locale
 
-Ogni _repository_ può essere clonata. In questo caso,
+Ogni _repository_ può essere clonata. Possiamo pensare al clone di una
+_repository_ come **la stessa repository** ma in locale (ossia, sul nostro PC
+invece che su un server). Quindi, la _repository_ principale sarà quella remota,
+e sarà unica. Tutte le altre copie, saranno quelle locali. Qualcosa di simile
+all'immagine seguente,
+
+![](../images/lw_03-git-remote-local.jpg)
 
 > **Nota bene**: clonare una _repository_ non è la stessa cosa di creare un
 > fork. Nel primo caso, infatti, il link tra la _repository_ remota e quella
 > locale è pressoché indissolubile. In altre parole, una _repository_ locale
 > trae la sua identità dal link con quella remota.
 
-![](../images/lw_03-git-remote-local.jpg)
+È possibile ottenere una copia locale della _repository_ tramite il comando
+`git clone`.
+[Qui](https://github.com/dev-edgemony/CB9/blob/main/lw_03/esercitazioni/README.md#1-clona-la-repository-cb9)
+trovi una esercitazione utile.
+
+Una delle funzioni delle _repository_ locali è quella di permettere ai singoli
+individui di apportare modifiche senza che queste abbiano effetto sulla remota.
+In altre parole, possiamo
 
 ### Tre stati, più uno
 
