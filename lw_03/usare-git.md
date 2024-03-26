@@ -41,21 +41,30 @@ all'immagine seguente,
 
 ![](../images/lw_03-git-remote-local.jpg)
 
-> **Nota bene**: clonare una _repository_ non è la stessa cosa di creare un
-> fork. Nel primo caso, infatti, il link tra la _repository_ remota e quella
-> locale è pressoché indissolubile. In altre parole, una _repository_ locale
-> trae la sua identità dal link con quella remota.
-
 È possibile ottenere una copia locale della _repository_ tramite il comando
 `git clone`.
 [Qui](https://github.com/dev-edgemony/CB9/blob/main/lw_03/esercitazioni/README.md#1-clona-la-repository-cb9)
 trovi una esercitazione utile.
 
+> **Nota bene**: clonare una _repository_ non è la stessa cosa di creare un
+> fork. Nel primo caso, infatti, il link tra la _repository_ remota e quella
+> locale è pressoché indissolubile. In altre parole, una _repository_ locale
+> trae la sua identità dal link con quella remota.
+
 Una delle funzioni delle _repository_ locali è quella di permettere ai singoli
 individui di apportare modifiche senza che queste abbiano effetto sulla remota.
-In altre parole, possiamo
+Allo stesso tempo, una _repository_ locale ha poca utilità se non quella di
+permettere di contribuire alle modifiche della _repository_ remota. A questo
+fine, esiste un flusso di lavoro.
+
+Prima di trattare il flusso di lavoro, è utile trattare i tre stati (più uno)
+nei quali i file di una _repository_ locale si possono trovare.
 
 ### Tre stati, più uno
+
+Non appena clonata, la _repository_ locale è identica a quella remota. In
+particolare, rappresenta al sua stessa storia, la sequenza di _commit_ alla
+quale accennavamo [in precedenza](#cosa-è-git).
 
 ## Link per approfondire
 
