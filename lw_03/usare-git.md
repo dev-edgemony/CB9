@@ -66,6 +66,26 @@ Non appena clonata, la _repository_ locale è identica a quella remota. In
 particolare, rappresenta al sua stessa storia, la sequenza di _commit_ alla
 quale accennavamo [in precedenza](#cosa-è-git).
 
+Apportare una modifica richiede un flusso in tre step. Per iniziare, possiamo
+immaginarlo come qualcosa del genere,
+
+![](../images/lw_03-git-flow.jpg)
+
+I comandi Git che ci permettono di passare da uno step all'altro sono,
+
+1. `git add`
+1. `git commit`
+
+Facendo riferimento all'analogia precedente, avremo qualcosa del genere,
+
+![](../images/lw_03-git-commands.jpg)
+
+In realtà, usare solo i comandi non ci porterebbe avanti, perché Git vuole
+sapere _cosa_ vogliamo aggiungere e _cosa_ stiamo impacchettando. In altre
+parole, qualcosa del genere,
+
+![](../images/lw_03-git-commands-apples.jpg)
+
 ## Link per approfondire
 
 > **FOMO warning!** La curiosità è una cosa bella, ma non perdi nulla di
