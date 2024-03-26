@@ -1,0 +1,46 @@
+> Questa sezione fa parte del Coding Bootcamp 9 di Edgemony, Learning Week 3.
+> Puoi trovare tutti gli altri contenuti della LW [qui](../lw_03/README.md).
+
+# CB9-LW3 – Esercitazioni
+
+## 1. Clona la repository CB9
+
+Per eseguire un clone di questa repository:
+
+1. Individua una cartella utile sul tuo PC/Mac
+1. Naviga verso la directory principale (ad es., nel mio caso
+   `https://github.com/angelogulina/CB9`)
+1. Invividua il tasto verde `Code`, e fai click
+1. Copia l'URL sotto la bat `HTTPS` (ad es., nel mio caso
+   `https://github.com/angelogulina/CB9.git`)
+1. Sul tuo terminale, esegui il comando:
+
+```bash
+git clone <link-alla-tua-repo>
+```
+
+## 2. Il mio primo commit
+
+All'interno della tua fork di `CB9,
+
+1. Vai alla cartella `lw_03/esercitazioni`
+1. Crea un nuovo file, denominato `il-mio-primo-commit.md`
+1. All'interno del file, inserisci questo test
+
+```md
+# CB9-LW3 – Esercitazioni: il mio primo commit
+```
+
+Adesso, esegui questi comandi dal terminale:
+
+```bash
+git status
+```
+
+```bash
+git add il-mio-primo-commit.md
+```
+
+```bash
+git commit -m "Aggiungi un file"
+```

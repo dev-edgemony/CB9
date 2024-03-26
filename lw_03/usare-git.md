@@ -27,11 +27,18 @@ quindi la versione in inglese _repository_.
 > in siciliano. La questione del femminile o maschile è ancora in fase di
 > risoluzione. Tuttavia, ci sono buone ragioni per pensare che sia maschile.
 
-La `repository` è quindi il luogo dove avvengono tutte le operazioni che noi
+La _repository_ è quindi il luogo dove avvengono tutte le operazioni che noi
 compiamo su file e cartelle tramite Git. Un esempio di _repository_ è quella che
 stai navigando adesso.
 
-### Remoto e locale
+### Remota e locale
+
+Ogni _repository_ può essere clonata. In questo caso,
+
+> **Nota bene**: clonare una _repository_ non è la stessa cosa di creare un
+> fork. Nel primo caso, infatti, il link tra la _repository_ remota e quella
+> locale è pressoché indissolubile. In altre parole, una _repository_ locale
+> trae la sua identità dal link con quella remota.
 
 ![](../images/lw_03-git-remote-local.jpg)
 
