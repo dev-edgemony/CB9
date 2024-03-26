@@ -130,8 +130,7 @@ remota?
 > domanda** per la quale cerchi una risposta. Una volta trovata, **fermati**.
 > Troverai sempre qui questi link, così da visitarli al momento guisto.
 
-1.[Cos'è Git?](https://git-scm.com/book/it/v2/Per-Iniziare-Cos%E2%80%99%C3%A9-Git%3F)
-sul sito ufficiale
-
+1. [Cos'è Git?](https://git-scm.com/book/it/v2/Per-Iniziare-Cos%E2%80%99%C3%A9-Git%3F)
+   sul sito ufficiale
 1. [Anatomia dell'arancin\*](https://www.instagram.com/p/CILMYH3hGjq/?img_index=1)
    su Instagram
