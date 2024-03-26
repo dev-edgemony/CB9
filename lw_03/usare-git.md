@@ -3,6 +3,15 @@
 
 # CB9-LW3 – Usare Git
 
+### Cosa è Git?
+
+I concetti necessari inizialmente per poter lavorare con Git sono:
+`Linea termporale` e `Istantanea`. Una prima approsimazione di cosa è Git: Una
+sequenza di istantanee disposte lungo una linea temporale. Ovvero, qualcosa del
+genere,
+
+![](../images/lw_03-git-timeline-books.jpg)
+
 ## Link per approfondire
 
 > **FOMO warning!** La curiosità è una cosa bella, ma non perdi nulla di
