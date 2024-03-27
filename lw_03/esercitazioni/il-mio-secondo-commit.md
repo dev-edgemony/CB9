@@ -1,3 +1,3 @@
 # Il mio secondo commit
 
-Testo aggiunto
+Testo aggiunto (e corretto)
