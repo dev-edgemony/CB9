@@ -29,7 +29,7 @@ spiegata a partire da fatti relativi alla fisica. È evidente che necessità di
 spiegazioni ulteriori[^2].
 
 Tali argomenti sono stati criticati da molti filosofi. Alcuni fisici, come
-Daniel Dennett, sostengono che gli zombi filosofeggianti sono logigamente
+Daniel Dennett, sostengono che gli zombi filosofici sono logicamente
 incoerenti, quindi impossibili[^4][^5]. Altri, come Christopher Hill, sostengono
 che gli zombi filosofici sono coerenti ma metafisicamente imbossibili[^6].
 
