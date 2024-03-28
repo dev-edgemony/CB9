@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid green;
+}
+
+.paragrafo {
+    color: red;
+}
+
+.menu-navigazione {
+    position: fixed;
+     width: 100%;
+     background-color: #90918e;
+     z-index: 10;
+     text-transform: uppercase;
+}
+
+.menu-navigazione a:hover {
+    color: #e15656;
+}
+
+.immagine h2 {
+    border: 1px solid black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.testo {
+    background-color: blue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.testo2 {
+    color: orangered;
+    font-size: large;
+}
