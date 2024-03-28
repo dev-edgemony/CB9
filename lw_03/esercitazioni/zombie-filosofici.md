@@ -13,7 +13,7 @@ chi prova dolore, incluso l'espressione verbale del dolore. Allo stesso modo, un
 mondo zombi è un mondo possibile indistinguibile dal nostro mondo in cui tutti
 gli esseri mancano di coscienza.
 
-Gli argomenti filosofici sugli zombe sono usati a sostegno del dualismo
+Gli argomenti filosofici sugli zombie sono usati a sostegno del dualismo
 mente-corpo contro forme di fisicalismo (ad. es., materialismo, il
 comportamentismo e il funzionalismo) e mirano a confutare la possibilità di
 qualsiasi soluzione fisicalista a quello che Chalmers definisce "problema
