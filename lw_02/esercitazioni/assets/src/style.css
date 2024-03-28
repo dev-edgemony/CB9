@@ -1,0 +1,626 @@
+/***********************************************************
+    GENERAL  -> RESPONSIVE (inserire anche qui?)
+
+    - modifica dimensioni in % (ove possibile)
+    - modifica font-size in rem/em
+    - elimina proprietà duplicate (semplifica)
+    - utilizza la versione ridotta delle proprietà
+
+    - per il prossimo progetto, comincia da mobile
+
+************************************************************/
+:root {
+    --black: #222325;
+    --dark: #2b2d42;
+    --darkpink: #FF6C91;
+    --pink: #FBAE97;
+    --white: #f7f7f7;
+    --light: #DCDADA;
+    --darkgrey: #757575;
+    --grey: #BFBEBE;
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --thumb: #edf2f4;
+    --green: #A7E278;
+    --yellow: #EEC55D;
+    --mildred: #F37D64;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--black);
+    background-color: var(--light);
+    font-size: 20px;
+    font-weight: 400;
+}
+h1 {
+    font-size: 46px;
+    font-weight: 600;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+h5 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+a {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--mildred);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--black);
+}
+input, textarea {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--darkgrey);
+}
+
+
+
+/*********************************************************** 
+    HEADER  -> RESPONSIVE (da rivedere + menu sticky)
+
+    Nem menu:
+    - aggiungere login e area riservata
+    - responsive: trasforma con hambuger menu
+************************************************************/
+#main-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../media/hero2.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+.header-menu {
+    width: 100%;
+    background-color: var(--black);
+}
+.header-menu ul {
+    display: block;
+    text-align: center;
+}
+.header-menu a {
+    display: block;
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px;
+}
+.header-menu a:hover {
+    color: var(--black);
+    background-color: var(--pink);
+    font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .header-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        width: 100%;
+        height: 10vh;
+    }
+    .header-menu a {
+        font-size: 16px;
+    }
+    .logo {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (min-width: 900px) {
+    .header-menu a {
+        font-size: 20px;
+    }
+    .logo {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+    
+}
+
+
+
+/***********************************************************
+    SECTION: INTRO  -> RESPONSIVE (da rivedere)
+************************************************************/
+#intro {
+    display: block;
+    margin-top: 50px;
+}
+#intro article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#intro h1, #intro p {
+    text-align: center;
+}
+#intro video {
+    margin-top: 50px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width: 700px) {
+    #intro {
+        margin-top: 100px;
+    }
+    #intro video{
+        height: 600px;
+        margin-top: 100px;
+    }
+}
+
+
+/***********************************************************
+    SECTION: BENEFITS  -> RESPONSIVE (da rivedere)
+************************************************************/
+#benefits {
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+#benefits img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.benefits-list {
+    width: 100%;
+    padding: 5%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.benefits-list h2, .benefits-list h4, .benefits-list p, .benefits-list ul {
+    margin-bottom: 5%;
+}
+.benefits-list ul {
+    list-style: disc inside;
+    line-height: 30px;
+}
+.collage img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+}
+
+@media (min-width: 700px) {
+    #benefits {
+        margin-top: 0px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #benefits img {
+        width: 50%;
+        height: auto;
+    }
+    .benefits-list {
+        width: 50%;
+        padding: 5%;
+        display: inline-block;
+        margin-bottom: 5%;
+    }
+    
+}
+
+
+
+/*********************************************************** 
+    SECTION: CHI SIAMO  -> RESPONSIVE (rivedere spazi)
+************************************************************/
+#about {
+    display: block;
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 5%;
+}
+#about h2, #about p {
+    text-align: left;
+    color: var(--white);
+}
+
+
+
+/*********************************************************** 
+    SECTION: CLASS  -> RESPONSIVE (rivedere dimensioni)
+************************************************************/
+#courses {
+    max-width: 90%;
+    margin: 5%;
+}
+.courses h2 {
+    margin: 1%;
+}
+
+.courses-cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.courses-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 80% 0 0;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+.courses-card:not(:last-child) {
+    margin-right: 40px;
+}
+.courses-card:hover {
+    color: var(--white);
+    background: var(--pink);
+}
+.courses-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.courses-card .label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+}
+.courses-card .beginner {
+    background-color: var(--green);
+}
+.courses-card .intermediate {
+    background-color: var(--yellow);
+}
+.courses-card .advanced {
+    background-color: var(--mildred);
+}
+.courses-card .courses-card-content {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.courses-card-content h4 {
+    margin-bottom: 15px;
+}
+.courses-card .card-link {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: var(--black);
+    font-weight: 800;
+    transition: background 0.2s;
+    font-size: 16px;
+}
+.courses-card:hover .card-link {
+    color: var(--white);
+} 
+.courses-cards::-webkit-scrollbar {
+    height: 12px;
+}
+.courses-cards::-webkit-scrollbar-thumb, .courses-cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+.courses-cards::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+.courses-cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+
+@media (min-width: 500px) {
+    .courses-card {
+        flex: 70% 0 0;
+    }
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+}
+@media (min-width: 700px) {
+    .courses-card {
+        flex: 50% 0 0;
+    }
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+@media (min-width: 900px) {
+    .courses-card {
+        flex: 40% 0 0;
+    }
+}
+@media (min-width: 1100px) {
+    .courses-card {
+        flex: 30% 0 0;
+    }
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+}
+
+
+
+/*********************************************************** 
+    SECTION: TEACHERS  -> RESPONSIVE (ok)
+************************************************************/
+#teachers {
+    background-color: var(--pink);
+    height: auto;
+    width: 100%;
+    padding: 5%;
+}
+.teachers-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 5%;
+}
+.teachers-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.teachers-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/*********************************************************** 
+    SECTION: RETREAT  -> RESPONSIVE (da rivedere)
+************************************************************/
+#retreat {
+    min-height: 400px;
+    width: 100%;
+    padding: 5%;
+}
+.parallax {
+    background-image: url("../media/retreat.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#retreat h2, #retreat p {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+
+
+/*********************************************************** 
+    SECTION: CONTACTS  -> RESPONSIVE (da rivedere)
+************************************************************/
+#contacts {
+    width: 100%;
+    display: block;
+}
+#contacts>div:first-child {
+    width: 100%;
+    padding: 5%;
+    display: block;
+}
+.contacts-info {
+    display: flex;
+    align-items: center;
+}
+.contacts-info div {
+    width: 50%;
+    padding: 5%;
+}
+.contacts-info .border {
+    display: inline-block;
+    border-right: 2px solid var(--black);
+    padding-left: 0;
+}
+
+form {
+    width: 100%;
+    margin-top: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 5px;
+}
+.textarea {
+    width: 100%;
+}
+label {
+    padding: 15px 10px 10px 0;
+    font-size: 18px;
+}
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 14px 20px;
+    margin-top: 30px; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+input[type=submit]:hover {
+    background-color: var(--pink);
+    color: var(--black);
+    font-weight: 600;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none;
+    width:100%;
+    height:100%;
+}
+.gmap_iframe {
+    height:400px;
+}
+
+@media (min-width: 1100px) {
+#contacts {
+    width: 100%;
+    display: flex;
+}
+#contacts>div:first-child {
+    width: 50%;
+}
+.mapouter {
+    width:50%;
+    height:100%;
+}
+.gmap_iframe {
+    height:800px;
+}
+}
+
+
+
+/*********************************************************** 
+    SECTION: FOOTER  -> RESPONSIVE (da rivedere)
+************************************************************/
+footer {
+    background-color: var(--black);
+    height: 300px;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h4, footer p, footer a{
+    font-size: 16px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+footer a {
+    text-decoration: underline;
+    color: var(--white);
+}
+footer a:hover {
+    color: var(--pink);
+    font-weight: 600;
+}
+.footer-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background-color: var(--black);
+}
+.footer-menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--grey)
+}
+
+@media (min-width: 1100px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
