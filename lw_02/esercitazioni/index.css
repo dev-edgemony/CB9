@@ -1,0 +1,716 @@
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Top black Bar */
+  .top-bar {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+  }
+  
+  .logo {
+    height: 50px;
+    vertical-align: middle;
+  }
+  
+  /* Nav Bar */
+  .nav-bar {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-bar a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+  }
+  
+  .nav-bar a:hover {
+    color: #a35a06;
+  }
+  
+  /* link in navbar */
+  .nav-bar div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Logo Center */
+  .nav-bar .logo-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #a35a06;
+  }
+  
+  
+  
+  /* Header */
+  header {
+    background-image: url('assets/images/sfondo-header.jpg');
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /*Titolo gioco*/
+  .header-title {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 50px;
+    padding-left: 80px;
+    font-family: "Truculenta", sans-serif;
+  }
+  .title-game {
+    font-size: 60px;
+  }
+  
+  /*Paragrafo autore*/
+  .info-generali {
+    width: 30%;
+    padding-top: 30px;
+  }
+  
+  .autrice {
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  
+  /*Paragrafo versioneps5*/
+  .versioneps5 {
+    width: 30%;
+    font-weight: normal;
+  }
+  
+  .quadre1 {
+    border: 1px solid white; 
+    padding: 5px; 
+    display: inline-block; 
+  
+  }
+  
+  .quadre2 {
+    border: 1px solid white; 
+    padding: 5px; 
+    display: inline-block; 
+  }
+  
+  /* Valutazione Mercato */
+  .valutazione {
+    font-size: 24px; 
+    color: orange; 
+  }
+  
+  .prezzo {
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 60px;
+  }
+  
+  /* Bottone */
+  .container-demo {
+    display: inline-block;
+    gap: 5px;
+  }
+  .bottone {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    width: 300px; 
+    height: 50px; 
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: -20px;
+    clear: both; 
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  
+  /* Botton Icon */
+  
+  .icona-cuore {
+    position: relative;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50px;
+  }
+  
+  
+  .icona-cuore:hover {
+   fill: white;
+  }
+  
+  .bottone:hover {
+    background-color: #a35a06;
+  }
+  
+  /* Data Relase*/
+  
+  .data-rilascio {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 20px;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 40px;
+    padding-left: 70px;
+  }
+  
+  
+  /* Prima Colonna */
+  .colonne {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    gap:8%;
+    }
+  
+  /* Game Mod List*/
+  
+  .lista-genere-gioco {
+    list-style-type: none;
+    justify-content: flex-start;
+    margin-left: 70px;
+    margin-right: 0px;
+    
+  }
+  
+  .gioco-offline-abilitato {
+    background-image: url('assets/images/offline-game.png'); 
+    background-repeat: no-repeat;
+    background-position: left; 
+    padding-left: 40px; 
+    line-height: 50px; 
+  }
+  
+  
+  .single-player {   
+    background-image: url('assets/images/single-player.png'); 
+    background-repeat: no-repeat;
+    background-position: left; 
+    padding-left: 40px; 
+    line-height: 50px; 
+  }
+  
+  .lista-specifiche-ps5 {
+    list-style-type: none;
+  }
+  
+  .vibrazione-ps5 {
+    background-image: url('assets/images/ps5-vibration-pad.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    padding-left: 40px; 
+    line-height: 50px; 
+  }
+  
+  
+  .streaming-ps5 {
+    background-image: url('assets/images/streaming-console-icon.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    padding-left: 40px; 
+    line-height: 50px; 
+  }
+  
+  /*Galleria*/
+  
+  .galleria-slides {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .galleria-slides figure {
+    flex: 0 0 auto; 
+    scroll-snap-align: start;
+    margin-right: 30px;
+  }
+  
+  .galleria-slides img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  /*Effetti IMG Galleria*/
+  
+  .galleria__immagine {
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease; 
+    transform: scale(1); 
+    border: 4px solid transparent; 
+    box-shadow: none; 
+  }
+  
+  .galleria__immagine:hover {
+    transform: scale(1.05); 
+    border: 4px solid #FFA500; 
+    box-shadow: 0 0 15px #e59400; 
+  }
+  
+  /*test style per barra di scorrimento*/
+  
+  .galleria-slides::-webkit-scrollbar {
+    width: 12px; /* Larghezza della barra di scorrimento */
+    background-color: #f9f9f9; /* Colore di sfondo della barra */
+  }
+  
+  
+  .galleria-slides::-webkit-scrollbar-thumb {
+    background-color: red; /* Colore delLa barra */
+    border-radius: 6px; 
+  }
+  
+  .galleria-slides::-webkit-scrollbar-track {
+    background-color: #e0e0e0; /* Colore di sfondo del track */
+    border-radius: 6px; /* Bordi arrotondati per il track */
+  }
+  
+  /*Topic*/
+  
+  .topic {
+    display: flex;
+    flex-direction: row;
+    background-image: url('assets/images/topc-image-background.jpg');
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 50vh; 
+    position: relative;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 250px; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .topic-left, .topic-right {
+    flex: 1; 
+    padding: 50px;
+    font-size: medium;
+  }
+  
+  .topic-left h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: "Truculenta", sans-serif;
+  }
+  
+  .topic-left p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif; 
+    }
+  
+  .list-topic-right li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  
+   /*Card*/
+  
+  .card-title h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "Truculenta", sans-serif;
+    text-align: center;
+    margin-bottom: 70px;
+    }
+  
+    .game-cards-container {
+     display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 60px;
+      text-align: center;
+    }
+  
+  
+    .card-game {
+      text-align: center;
+      padding: 5px;
+    }
+  
+    .card-game img {
+      border-radius: 5%;
+      border-radius: 5%;
+      transition: transform 0.3s ease; /* Aggiunge una transizione animata al transform */
+    }
+  
+    .card-game img:hover {
+      transform: scale(1.05);
+    }
+  
+  
+  .card-game p {
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+  }
+  
+  .card-game h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+    
+  /*Indies*/
+  
+  .indies-container {
+    background-image: url('assets/images/indies-background.jpg');
+    background-size: auto;
+    color: white;
+    width: 100%;
+    height: 37vh;
+    display: flex;
+  }
+  
+  .indies-text {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 180px;
+    padding-top: 190px;
+    padding-right: 57%;
+    font-weight: normal;
+  }
+  /*Bottone Indies*/
+  
+  .bottone-indies-text {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    width: 300px; 
+    height: 50px; 
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 50px;
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+    transition: border 0.3s ease, box-shadow 0.3s ease; 
+    border: 2px solid transparent;
+  }
+  
+  .bottone-indies-text:hover {
+    border: 2px solid white; 
+    box-shadow: 0 0 8px white; 
+  }
+  
+  .indies-link {
+    margin-top: 20px;
+  }
+  
+  /*Tools*/
+  
+  .tools-container {
+    display: grid;
+    grid-template-columns: 6fr 5fr 5fr 5fr 6fr; 
+    color: white;
+    background-color: #171517; 
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  
+  .tools-title-list dt {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  
+  }
+  
+  .tools-description-list dd{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+  
+  }
+  
+  .tools-info p {
+      margin-bottom: 10px;
+      margin-top: 20px;
+  }
+  
+  /*Footer*/
+  
+  .footer-homepage {
+    display: grid; 
+    grid-template-columns: 1fr 9fr 1fr;
+    background-color: #171517; 
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  .eula-link{
+    padding-top: 20px;
+  }
+  .eula-link a{
+    color: white;
+  }
+  .eula-link a:hover {
+    color: blue;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 480px) {
+      /*Mobile Nav Bar*/
+    .nav-bar {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .nav-bar a {
+      font-size: 16px; 
+      padding: 5px 0; 
+    }
+  
+    .nav-bar div {
+      display: inline;
+      align-items: center; 
+      word-spacing: 10px;
+  
+    }
+  
+    .logo-center {
+      order: -1; 
+      margin-bottom: 10px; 
+    }
+  
+    .search-bar {
+      justify-content: center; 
+      width: 100%; 
+      padding: 0 20px;
+    }
+  
+    .search-bar input[type="text"] {
+      width: 70%; 
+    }
+  
+    .search-bar button {
+      width: auto; 
+      padding: 5px; 
+    }
+  
+  /* Mobile Header */
+  header {
+    background-image: url('assets/images/header-background-mobile.jpg');
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /*Mobile Titolo gioco*/
+  .header-title {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 50;
+    font-style: normal;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-family: "Truculenta", sans-serif;
+  }
+  .title-game {
+    font-size: 45px;
+  }
+  
+  /*Paragrafo autore*/
+  .info-generali {
+    width: 100%;
+    padding-top: 1px;
+  }
+  
+  .autrice {
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  
+  /*Paragrafo versioneps5*/
+  .versioneps5 {
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .quadre1 {
+    border: 1px solid white; 
+    padding: 5px; 
+    display: inline-block; 
+  
+  }
+  
+  .quadre2 {
+    border: 1px solid white; 
+    padding: 5px; 
+    display: inline-block; 
+  }
+  
+  /* Valutazione Mercato */
+  .valutazione {
+    font-size: 18px; 
+    color: orange; 
+  }
+  
+  .prezzo {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 20px;
+  }
+  
+  /* Bottone */
+  .container-demo {
+    display: inline-block;
+    gap: 2px;
+  }
+  .bottone {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    width: 200px; 
+    height: 50px; 
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 150px;
+    clear: both; 
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  
+  /* Botton Icon */
+  
+  .icona-cuore {
+    position: relative;
+    display: inline-block; 
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  
+  
+  .icona-cuore:hover {
+   fill: white;
+  }
+  
+  .bottone:hover {
+    background-color: #a35a06;
+  }
+  
+  /* Data Relase*/
+  
+  .data-rilascio {
+    font-size: 12px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px; 
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  
+  
+  /* Prima Colonna */
+  .colonne {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 50px;  
+  }
+  
+  /* Game Mod List*/
+  
+  .genere-gioco {
+    margin-left: -70px;
+    padding-bottom: 50px;
+  }
+  
+  .lista-genere-gioco, .lista-specifiche-ps5 {
+    list-style-type: none;
+    margin-right: 100px; 
+  }
+  
+  .gioco-offline-abilitato, .single-player, .vibrazione-ps5, .streaming-ps5 {
+    background-repeat: no-repeat;
+    background-position: unset; 
+    padding-left: 40px;
+    line-height: 50px; 
+  }
+  
+  }
+  
