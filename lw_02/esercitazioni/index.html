@@ -15,12 +15,18 @@
 </head>
 <body>
     <!-- HEADER -->
+
     <header id="main-header">
         <div id="hero">
             <img class="logo" src="assets/media/logo.png" alt="logo" width="300" height="300">
         </div>
-        <nav class="header-menu">
+        <nav class="header-menu" id="myTopnav">
             <ul>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">HAMBURGER</i>
+                      </a>
+                </li>
                 <li><a href="#intro" title="vai alla home">Home</a></li>
                 <!-- <li><a href="#intro" title="intro allo yoga">Intro</a></li> -->
                 <li><a href="#benefits" title="scopri i benefici dello yoga">Benefici</a></li>
@@ -349,6 +355,17 @@
 
         
     </footer>
+
+<script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "header-menu") {
+            x.className += "responsive";
+          } else {
+            x.className = "header-menu";
+          }
+        }
+        </script>
 
 </body>
 </html>
