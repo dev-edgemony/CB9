@@ -1,0 +1,32 @@
+/***********************************************************
+    GENERAL RESET -> rivedere cosa contenere qui
+************************************************************/
+:root {
+    --black: #222325;
+    --dark: #2b2d42;
+    --darkpink: #FF6C91;
+    --pink: #FBAE97;
+    --white: #f7f7f7;
+    --light: #DCDADA;
+    --darkgrey: #757575;
+    --grey: #BFBEBE;
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --thumb: #edf2f4;
+    --green: #A7E278;
+    --yellow: #EEC55D;
+    --mildred: #F37D64;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--black);
+    background-color: var(--light);
+    font-size: 20px;
+    font-weight: 400;
+}

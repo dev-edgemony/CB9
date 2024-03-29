@@ -1,4 +1,10 @@
 /***********************************************************
+    IMPORT
+************************************************************/
+@import url(reset.css);
+@import url(typography.css);
+
+/***********************************************************
     GENERAL  -> RESPONSIVE (inserire anche qui?)
 
     - modifica dimensioni in % (ove possibile)
