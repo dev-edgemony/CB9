@@ -17,7 +17,7 @@ Gli argomenti filosofici sugli zombi sono usati a sostegno del dualismo
 mente-corpo contro forme di fisicalismo (ad. es., materialismo, il
 comportamentismo e il funzionalismo) e mirano a confutare la possibilità di
 qualsiasi soluzione fisicalista a quello che Chalmers definisce "problema
-difficile della coscienza"[^2] over il problema di rendere conto dell'esperienza
+difficile della coscienza"[^2] ovvero il problema di rendere conto dell'esperienza
 soggettiva, intrinseca e in prima persona, del cosa-si-prova[^3], come definito
 da Thomas Nagel. I proponenti dell'argomento dello zombi filosofeggianti, tra i
 quali il filosofo David Chalmers, sostengono che poiché uno zombi filosofico è
