@@ -25,7 +25,7 @@ per definizione fisicamente identico a una persona cosciente, la sola
 possibilità logica della sua esistenza è sufficiente a confutare il fisicalismo.
 In altre parole, se possiamo concepire un essere fisicamente identico a una
 persona che non ha coscienza, l'esistenza di quest'ultima non può essere
-spiegata a partire fatti relativi alla fisoca. È evidente che necessità di
+spiegata a partire fatti relativi alla fisica. È evidente che necessità di
 spiegazioni ulteriori[^2].
 
 Tali argomenti sono stati crititati da molti filosofi. Alcuni fisicalisti, come
