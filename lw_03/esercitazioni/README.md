@@ -37,9 +37,16 @@ Adesso, esegui questi comandi dal terminale:
 git status
 ```
 
+Se è tutto corretto, il terminale dovrebbe mostrari
+il file modificato.
+
 ```bash
-git add il-mio-primo-commit.md
+git add lw_03/esercitazioni/il-mio-primo-commit.md
 ```
+
+**Nota**: per aggiungere il file correttamente, è necessario che
+il percorso sia corretto (ad es., `lw_03/esercitazioni/il-mio-primo-commit.md`)
+e che l'estensione sia presente.
 
 ```bash
 git commit -m "Aggiungi un file"
@@ -47,10 +54,10 @@ git commit -m "Aggiungi un file"
 
 ## 3. Modificare un file esistente
 
-All'interno della tua fork di `CB9,
+All'interno della tua fork di `CB9`,
 
 1. Vai alla cartella `lw_03/esercitazioni`
-1. Apri il file `zombie-filosofici.md`
+1. Apri il file `lw_03/esercitazioni/zombie-filosofici.md`
 1. Trova gli errori all'interno del file (ad, es., refusi)
 1. Per ogni correzione, esegui il
    [flusso di lavoro in 3 step](https://github.com/dev-edgemony/CB9/blob/main/lw_03/usare-git.md#il-flusso-di-lavoro-git-in-tre-step)
