@@ -29,36 +29,32 @@
     background-image: url("../media/hero2.jpg");
     background-size: cover;
     text-align: center;
+    margin-top: -24px;
 }
 .logo {
     width: 200px;
     height: 200px;
     margin: 20px;
 }
-
-
-
-
-
-
+#myTopnav {
+    background-color: var(black);
+    height: auto;
+    
+}
 .header-menu ul li:not(:first-child) {
     display: none;
 }
 
-
 .header-menuresponsive {
     width: 100%;
     background-color: var(--black);
+    padding-bottom: 40px;
 }
 .header-menuresponsive ul {
     display: block;
     text-align: center;
     background-color: var(--black);
 }
-/* .header-menu.responsive ul li {
-    background-color: var(--black);
-    height: auto;
-} */
 .header-menuresponsive ul li a {
     display: block;
     text-decoration: none;
@@ -80,8 +76,9 @@
     color: var(--white);
     font-size: 25px;
 }
-.header-menu .icon:hover, .header-menuresponsive .icon:hover {
+.header-menu a .icon:hover, .header-menuresponsive a .icon:hover {
     color: var(--pink);
+    background-color: none;
 }
 
 @media (min-width: 600px) {
