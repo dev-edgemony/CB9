@@ -65,7 +65,8 @@
     background-color: var(--black);
     text-align: center;
 }
-.header-menuresponsive ul li a:hover {
+
+.header-menuresponsive ul a:hover {
     color: var(--black);
     background-color: var(--pink);
 } 
@@ -76,10 +77,11 @@
     color: var(--white);
     font-size: 25px;
 }
-.header-menu a .icon:hover, .header-menuresponsive a .icon:hover {
+.header-menu .icon:hover, .header-menuresponsive .icon:hover {
     color: var(--pink);
-    background-color: none;
+    background-color: var(--black);
 }
+
 
 @media (min-width: 600px) {
     #main-header {
@@ -104,6 +106,10 @@
         width: 100%;
         background-color: var(--black);
         height: auto;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; */
     }
     .header-menu ul {
         display: flex;
@@ -113,7 +119,6 @@
         align-content: center;
         flex-wrap: wrap;
         list-style-type: none;
-        width: 100%;
         background-color: var(--black);
     }
     .header-menu ul li:not(:first-child) {
@@ -122,6 +127,8 @@
     .header-menu ul li:first-child {
         display: none;
     }
+    
+    
     .header-menu a {
         display: block;
         text-decoration: none;
@@ -140,7 +147,11 @@
         position: -webkit-sticky;
         top: 0;
     }
-
+    .header-menu ul li .login {
+        color: var(--black);
+        border: 2px solid var(pink);
+        padding: 5px;
+    }
 
     .hero-mobile{
         display: none;
