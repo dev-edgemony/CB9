@@ -31,7 +31,7 @@ spiegazioni ulteriori[^2].
 Tali argomenti sono stati criticati da molti filosofi. Alcuni fisici, come
 Daniel Dennett, sostengono che gli zombi filosofici sono logicamente
 incoerenti, quindi impossibili[^4][^5]. Altri, come Christopher Hill, sostengono
-che gli zombi filosofici sono coerenti ma metafisicamente imbossibili[^6].
+che gli zombi filosofici sono coerenti ma metafisicamente impossibili[^6].
 
 [^1]:
     (EN) Robert Kirk,
