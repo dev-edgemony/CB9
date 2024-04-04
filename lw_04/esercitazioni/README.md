@@ -1,7 +1,7 @@
 > Questa sezione fa parte del Coding Bootcamp 9 di Edgemony, Learning Week 4.
 > Puoi trovare tutti gli altri contenuti della LW [qui](../lw_04/README.md).
 
-# CB9-LW3 – Esercitazioni
+# CB9-LW4 – Esercitazioni
 
 ## 1. Se faccio il compleanno, ricevo regalo!
 
