@@ -34,16 +34,49 @@
 
  //Terzo Esercizio Avanzato 1
 
- let userBirthday = prompt("Inserisci la data del tuo compleanno");
+ //let userBirthday = prompt("Inserisci la data del tuo compleanno");
 
- let currentDate = '04/04/2024';
+ //let currentDate = '04/04/2024';
 
 
-if (currentDate === userBirthday) {
+//if (currentDate === userBirthday) {
 
-  console.log('🎁');
+  //console.log('🎁');
+//} else {
+
+  //console.log('Oggi non è il tuo compleanno.');
+//}
+
+
+// Quarto Esercizio Avanzato 2
+
+
+let firstNumber = prompt("Inserisci il primo numero:");
+
+let mathOperator = prompt("Inserisci l'operazione da eseguire (+, -, *, /):");
+
+let secondNumber = prompt("Inserisci il secondo numero:");
+
+let result;
+
+if (mathOperator == "+") {
+    result = parseFloat(firstNumber) + parseFloat(secondNumber);
+} else if (mathOperator == "-") {
+    result = parseFloat(firstNumber) - parseFloat(secondNumber);
+} else if (mathOperator == "*") {
+    result = parseFloat(firstNumber) * parseFloat(secondNumber);
+} else if (mathOperator == "/") {
+    if (secondNumber == "0") {
+        alert("Errore: Divisione per zero non consentita.");
+    } else {
+        result = parseFloat(firstNumber) / parseFloat(secondNumber);
+    }
 } else {
+    alert("Operazione non valida.");
+}
 
-  console.log('Oggi non è il tuo compleanno.');
+
+if (result !== undefined) {
+    alert("Risultato: " + result);
 }
 
