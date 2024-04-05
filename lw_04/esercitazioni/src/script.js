@@ -1,6 +1,6 @@
 function getBirthday () {
 
-    const userBirthday = prompt("Quand'è il tuo compleanno?");
+    const userBirthday = prompt("Quand'è il tuo compleanno? (formato DD/MM/YYYY)");
     const today = ("05/04/2024");
        
     if (userBirthday === today) {
@@ -11,37 +11,22 @@ function getBirthday () {
 
 }
 
-// Volevo provare ad impostare la data prendendola dal sistema, ma si rompe l'if perchè l'utente inserisce una stringa 
-
-    // let today = new Date();
-    // let dd = today.getDate();
-    // let mm = today.getMonth() + 1;
-    // let yyyy = today.getFullYear();
-    // if (dd < 10) {
-    //     dd = '0' + dd;
-    // } 
-    // if (mm < 10) {
-    //     mm = '0' + mm;
-    // } 
-    // today = (dd + '/' + mm + '/' + yyyy);
-    // console.log(today);
-
 // -----------------------------------------------------------------------------------------------------------------------
 
 function getDay () {
 
     const day = [
-        "si alza mio figlio", 
-        "mi alzo", 
-        "preparo la colazione per tutta la famiglia", 
-        "gioco con mio figlio", 
-        "inizio a lavorare", 
-        "preparo da mangiare per la famiglia", 
-        "torno al lavoro", 
-        "faccio una passeggiata con la famiglia", 
-        "seguo il corso FE", 
-        "addormento mio figlio", 
-        "vado a letto"
+        "Si alza Gabriele", 
+        "Mi alzo", 
+        "Preparo la colazione per tutta la famiglia", 
+        "Gioco con Gabriele", 
+        "Inizio a lavorare", 
+        "Preparo da mangiare per la famiglia", 
+        "Torno al lavoro", 
+        "Faccio una passeggiata con tutta la famiglia", 
+        "Seguo il corso FE", 
+        "Addormento Gabriele", 
+        "Vado a letto"
     ]
 
     for (activities in day) {
@@ -52,6 +37,29 @@ function getDay () {
 
 // -----------------------------------------------------------------------------------------------------------------------
 
-function getCalculator () {
+function getCalc () {
+
+    let number1 = prompt("Digita il primo numero");
+    let operator = prompt("Scegli l'operazione");
+    let number2 = prompt("Digita il secondo numero");
+    let result;
+
+    switch (operator) {
+        case "+":
+            result = parseInt(number1) + parseInt(number2);
+            break;
+        case "-":
+            result = parseInt(number1) - parseInt(number2);
+            break;
+        case "*":
+            result = parseInt(number1) * parseInt(number2);
+            break;
+        case "/":
+            result = parseInt(number1) / parseInt(number2);
+            break;
+        default:
+            result = "Error"
+    }
     
+    alert("Il risultato è: " + result)
 }
