@@ -57,8 +57,6 @@ switch (operazioni) {
 
     case "/" :
         alert((+numero1) / (numero2));
-        if (numero2 === 0) {
-            alert("impossibile");
-        }
     break;
 }
+// -----------------------------------------------------------------------------------
