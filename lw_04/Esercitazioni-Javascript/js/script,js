@@ -1,0 +1,10 @@
+### //Esercizio 1 e 1 Avanzato// ###
+
+const birthdayDate = prompt("When were you born?")
+
+  if (birthdayDate === "26/05/1986") {
+       console.log(" 🎁");
+} else {
+    console.log("It's not your birthday...Sorry!!");
+}
+

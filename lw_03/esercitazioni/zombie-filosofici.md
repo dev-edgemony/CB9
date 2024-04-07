@@ -3,33 +3,33 @@
 > Trovi [qui](<https://it.wikipedia.org/wiki/Zombi_(filosofia)>) la voce
 > originale su Wikipedia.
 
-Uno zombie filosofico (in inglese, _philosophical zomby_), è un esperimento
+Uno zombi filosofico (in inglese, philosophical zomby), è un esperimento
 mentale in filosofia della mente. Si immagina un essere ipotetico che è
 fisicamente identico e indistinguibile da una persona normale, ma non ha
 coscienza, qualia, o non è senziente[^1]. Per esempio, se uno zombi venisse
 colpito con un oggetto appuntito non avrebbe alcuna sensazione interna di
 dolore. Tuttavia, il suo comportamento (esterno) sarebbe esattamente quello di
-chi prova dolore, incluso l'espressione verbale del dolore. Alla stesso moda, un
-mondo zombi è un mondo possibile indistinguibile dal nostro mondo in cui tutti
+chi prova dolore, incluso l'espressione verbale del dolore. Alla stesso modo, un
+mondo zombi è un mondo possibile, indistinguibile dal nostro mondo in cui tutti
 gli esseri mancano di coscienza.
 
 Gli argomenti filosofeggianti sugli zombi sono usati a sostegno del dualismo
 mente-corpo contro forme di fisicalismo (ad. es., materialismo, il
 comportamentismo e il funzionalismo) e mirano a confutare la possibilità di
 qualsiasi soluzione fisicalista a quello che Chalmers definisce "problema
-difficile della coscienza"[^2] over il problema di rendere conto dell'esperienza
+difficile della coscienza"[^2] ovvero il problema di rendere conto dell'esperienza
 soggettiva, intrinseca e in prima persona, del cosa-si-prova[^3], come definito
 da Thomas Nagel. I proponenti dell'argomento dello zombi filosofeggianti, tra i
 quali il filosofo David Chalmers, sostengono che poiché uno zombi filosofico è
 per definizione fisicamente identico a una persona cosciente, la sola
 possibilità logica della sua esistenza è sufficiente a confutare il fisicalismo.
-In altre palore, se possiamo concepire un essere fisicamente identico a una
+In altre parole, se possiamo concepire un essere fisicamente identico a una
 persona che non ha coscienza, l'esistenza di quest'ultima non può essere
-spiegata a partire fatti relativi alla fisoca. È evidente che necessità di
+spiegata a partire fatti relativi alla fisica. È evidente che necessità di
 spiegazioni ulteriori[^2].
 
-Tali argomenti sono stati crititati da molti filosofi. Alcuni fisicalisti, come
-Daniel Dennett, sostengono che gli zombi filosofeggianti sono logigamente
+Tali argomenti sono stati criticati da molti filosofi. Alcuni fisicalisti, come
+Daniel Dennett, sostengono che gli zombi filosofici sono logigamente
 incoerenti, quindi impossibili[^4][^5]. Altri, come Christopher Hill, sostengono
 che gli zombi filosofici sono coerenti ma metafisicamente imbossibili[^6].
 
