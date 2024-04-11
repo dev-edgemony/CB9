@@ -35,23 +35,49 @@
 
 //--------------- EXERCISE 3 - Calculator -----------------//
 
-const numOne = parseInt(prompt("Inserisci il primo numero"));
-const mathSym = prompt("Inserisci / + - o *");
-const numTwo = parseInt(prompt("Inserisci il secondo numero"));
+// const numOne = parseInt(prompt("Inserisci il primo numero"));
+// const mathSym = prompt("Inserisci / + - o *");
+// const numTwo = parseInt(prompt("Inserisci il secondo numero"));
 
-// console.log(numOne, numTwo, mathSym);
+// // // console.log(numOne, numTwo, mathSym);
 
-switch(mathSym){
-    case "+":
-        console.log(numOne + numTwo)
-        break;
-    case "/":
-        console.log(numOne / numTwo)
-        break;
-    case "-":
-        console.log(numOne - numTwo)
-        break;
-    case "*":
-        console.log(numOne * numTwo)
-        break;
-}
+// switch(mathSym){
+//     case "+":
+//         console.log(numOne + numTwo)
+//         break;
+//     case "/":
+//         console.log(numOne / numTwo)
+//         break;
+//     case "-":
+//         console.log(numOne - numTwo)
+//         break;
+//     case "*":
+//         console.log(numOne * numTwo)
+//         break;
+// }
+
+// secondo esempio
+
+// const numOne = parseInt(prompt("Inserisci il primo numero"));
+// const mathSym = prompt("Inserisci / + - o *");
+// const numTwo = parseInt(prompt("Inserisci il secondo numero"));
+
+// // console.log(numOne, numTwo, mathSym);
+
+// switch(mathSym){
+//     case "+":
+//         console.log(numOne + numTwo)
+//         break;
+//     case "/":
+//         console.log(numOne / numTwo)
+//         break;
+//     case "-":
+//         console.log(numOne - numTwo)
+//         break;
+//     case "*":
+//         console.log(numOne * numTwo)
+//         break;
+//     default :
+//         console.log("Questa non è un'operazione valida")
+//     break;
+//}
