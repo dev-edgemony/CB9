@@ -1,0 +1,17 @@
+.dark-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  font-size: 3rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid red;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.dark-mode:hover {
+  transform: scale(1.2);
+}
