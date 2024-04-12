@@ -20,7 +20,7 @@
 
 //Esercizio 2 - Trova il Massimo
 
-function higthNum(totValue) {
+/* function higthNum(totValue) {
     let maxNumber = totValue[0]; 
   
     for (let i = 1; i < totValue.length; i++) { 
@@ -37,5 +37,18 @@ function higthNum(totValue) {
   const value3 = prompt("Inserisci un numero");
   const totValue = [value1, value2, value3];
   
-  console.log("Il numero più alto è:", higthNum(totValue));
+  console.log("Il numero più alto è:", higthNum(totValue)); */
+
+  //Esercizio Avanzato 1 - Filtra e Mappa
+  let team = [
+    { nome: "Marco", salario: 2000 },
+    { nome: "Luca", salario: 4000 },
+    { nome: "Lia", salario: 2500 }
+  ];
+  
+  const addSalary = team.filter(member => member.salario < 3000);
+  
+  addSalary.forEach(member => {
+    console.log(`${member.nome} ha uno stipendio di ${member.salario}`);
+  });
   
