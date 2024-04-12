@@ -20,10 +20,22 @@
 
 //Esercizio 2 - Trova il Massimo
 
-function numFilter(array) {
-    // uso filter così che restituisca solo numeri maggiori di 5
-    return array.filter(number => number > 5); //funzione di callback che riceve ogni numero dell'array e restituisce true se è > 5 altrimenti false
-}
-
-const number = [3, 5, 7, 9, 2];
-console.log(numFilter(number)); // Mi restituisce [7, 9], che sono maggiori di 5
+function higthNum(totValue) {
+    let maxNumber = totValue[0]; 
+  
+    for (let i = 1; i < totValue.length; i++) { 
+      if (totValue[i] > maxNumber) { 
+        maxNumber = totValue[i]; 
+      }
+    }
+  
+    return maxNumber; 
+  }
+  
+  const value1 = prompt("Inserisci un numero");
+  const value2 = prompt("Inserisci un numero");
+  const value3 = prompt("Inserisci un numero");
+  const totValue = [value1, value2, value3];
+  
+  console.log("Il numero più alto è:", higthNum(totValue));
+  
