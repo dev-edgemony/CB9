@@ -40,7 +40,7 @@
   console.log("Il numero più alto è:", higthNum(totValue)); */
 
   //Esercizio Avanzato 1 - Filtra e Mappa
-  let team = [
+/*   let team = [
     { nome: "Marco", salario: 2000 },
     { nome: "Luca", salario: 4000 },
     { nome: "Lia", salario: 2500 }
@@ -54,4 +54,51 @@
     member.salario += addSalary;
     console.log(`${member.nome} ha uno stipendio di ${member.salario}`);
   });
+   */
+
+  //Avanzato 2 - Calcolatrice ++
+
+  function getInput(message, callback) { 
+    const input = prompt(message);
+    callback(input);
+  }
   
+  function performOperation(firstNumber, mathOperator, secondNumber) {
+    firstNumber = parseFloat(firstNumber);
+    secondNumber = parseFloat(secondNumber);
+    let result;
+  
+    switch (mathOperator) {
+      case "+":
+        result = firstNumber + secondNumber;
+        break;
+      case "-":
+        result = firstNumber - secondNumber;
+        break;
+      case "*":
+        result = firstNumber * secondNumber;
+        break;
+      case "/":
+        if (secondNumber === 0) {
+          alert("Errore: Non puoi dividere per zero!");
+        } else {
+          result = firstNumber / secondNumber;
+        }
+        break;
+      default:
+        alert("Operazione non valida");
+        return;
+    }
+  
+    if (result !== undefined) {
+      alert("Risultato: " + result);
+    }
+  }
+  
+  getInput("Inserisci il primo numero", function(firstNumber) {
+    getInput("Inserisci l'operazione da eseguire (+, -, *, /)", function(mathOperator) {
+      getInput("Inserisci il secondo numero", function(secondNumber) {
+        performOperation(firstNumber, mathOperator, secondNumber);
+      });
+    });
+  });
