@@ -46,9 +46,12 @@
     { nome: "Lia", salario: 2500 }
   ];
   
-  const addSalary = team.filter(member => member.salario < 3000);
+  const underPaid = team.filter(member => member.salario < 3000);
   
-  addSalary.forEach(member => {
+  
+  underPaid.forEach(member => {
+    const addSalary = member.salario * 0.1;
+    member.salario += addSalary;
     console.log(`${member.nome} ha uno stipendio di ${member.salario}`);
   });
   
