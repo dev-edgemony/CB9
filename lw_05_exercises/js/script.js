@@ -1,11 +1,32 @@
+// ## 1. Conta le Vocali
+
+// Scrivere una funzione che prenda in input una stringa e restituisca il numero totale di vocali (a, e, i, o, u) presenti nella stringa. Create voi la stringa, a piacere vostro.
+
+// > Aiuto: considerare l'utilizzo dei cicli for.
+
+function countVowels(sentence) {
+    const vowels= ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    let vowelsCounter = 0;
+
+    for(let i=0; i < sentence.length; i++){
+        if(vowels.includes(sentence[i])) {
+            vowelsCounter++;
+        }
+    }
+
+    return vowelsCounter;
+}
+
+let phrase = "Questo esercizio non e' stato per nulla facile ma ci sono riuscita";
+console.log("Numero di vocali:", countVowels(phrase));
 
 
 
 // ## 2 Trova il numero massimo
 
-const num = [1, 2, 5, 8, 23, 54, 89, 102, 150, 200];
-const maxNumber = Math.max(...num);
-console.log(maxNumber);
+// const num = [1, 2, 5, 8, 23, 54, 89, 102, 150, 200];
+// const maxNumber = Math.max(...num);
+// console.log(maxNumber);
 
 
 
@@ -23,20 +44,20 @@ console.log(maxNumber);
 // ]
 
 
-const people =[
-    { name: 'Marco', salary: 2000},
-    { name: 'Luca', salary: 4000},
-    { name: 'Lia', salary: 2500},
-    { name: 'Giacoma', salary: 4700},
-    { name: 'Guendalina', salary: 1800}
-];
+// const people =[
+//     { name: 'Marco', salary: 2000},
+//     { name: 'Luca', salary: 4000},
+//     { name: 'Lia', salary: 2500},
+//     { name: 'Giacoma', salary: 4700},
+//     { name: 'Guendalina', salary: 1800}
+// ];
 
 
-const salaryFilt = people.filter((element) => element.salary < 4000);
-const newSalary = salaryFilt.map(element => {
-    const updatedSalary = (element.salary +((element.salary / 100) * 10));
-    return { name: element.name, Salary: updatedSalary}
-});
+// const salaryFilt = people.filter((element) => element.salary < 4000);
+// const newSalary = salaryFilt.map(element => {
+//     const updatedSalary = (element.salary +((element.salary / 100) * 10));
+//     return { name: element.name, Salary: updatedSalary}
+// });
 
-//console.log(salaryFilt);
-console.log(newSalary);
+// //console.log(salaryFilt);
+// console.log(newSalary);
