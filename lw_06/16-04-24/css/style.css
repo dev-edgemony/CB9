@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(255, 240, 240);
+}
+
+.title {
+  color: lightsalmon;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.quotes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.quote-item {
+  width: 300px;
+  padding: 6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: white;
+  color: rgb(232, 98, 45);
+  font-size: 0.8rem;
+}
