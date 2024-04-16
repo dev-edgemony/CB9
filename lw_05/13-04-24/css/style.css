@@ -1,0 +1,38 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title {
+  color: lightseagreen;
+  border-bottom: 1px solid lightseagreen;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.title:hover {
+  color: white;
+  background-color: lightseagreen;
+}
+
+.active {
+  background-color: greenyellow;
+}
+
+/* Stile card */
+.card {
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.cardText {
+  padding: 0 20px;
+}
+
+.cardImg {
+  width: 240px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
