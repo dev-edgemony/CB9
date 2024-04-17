@@ -33,3 +33,17 @@ function ImgGenerator(src, alt) {
     const containerEl = document.getElementById('container');
     const newImage = ImgGenerator('https://picsum.photos/200/300');
     containerEl.appendChild(newImage);
+
+    //# 3. Cambio colore su Click
+
+    const titleEl = document.querySelector('#container h1'); 
+    const colorsEl = ['red', 'yellow', 'green', 'blue', 'black']; 
+    let colorIndex = 0; 
+
+    titleEl.addEventListener('click', function() {
+        titleEl.style.color = colorsEl[colorIndex]; 
+        colorIndex += 1;
+        if (colorIndex >= colorsEl.length) {
+            colorIndex = 0;
+        }
+    });
