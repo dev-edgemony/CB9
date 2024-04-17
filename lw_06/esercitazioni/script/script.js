@@ -47,3 +47,23 @@ function ImgGenerator(src, alt) {
             colorIndex = 0;
         }
     });
+
+    //## Avanzato 1 - Generatore di Card Meteo
+
+    function createWeatherCard(cityName, temperature, weatherCondition, container) {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'weather-card';
+        const cityEl = document.createElement('h3');
+        cityEl.textContent = cityName;
+        cardEl.appendChild(cityEl);
+        const tempEl = document.createElement('p');
+        tempEl.textContent = `Temperatura: ${temperature}°C`;
+        cardEl.appendChild(tempEl);
+        const conditionEl = document.createElement('p');
+        conditionEl.textContent = `Condizioni meteo: ${weatherCondition}`;
+        cardEl.appendChild(conditionEl);
+        container.appendChild(cardEl);
+    }
+ 
+    createWeatherCard('Los Santos', 23, 'Nuvoloso ☁️', containerEl);
+    createWeatherCard('Cayo Perico', 41, 'Soleggiato ☀️', containerEl);

@@ -1,0 +1,51 @@
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.weather-card {
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.weather-card h3 {
+    color: #2c3e50; 
+    margin-bottom: 10px; 
+}
+
+.weather-card p {
+    color: #34495e; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 5px; 
+}
+
+
+.weather-card .soleggiato {
+    color: #e67e22;
+}
+
+.weather-card .nuvoloso {
+    color: #95a5a6; 
+}
+
+.weather-card .pioggia {
+    color: #3498db; 
+}
+
+.weather-card .neve {
+    color: #ecf0f1; 
+}
+
+
