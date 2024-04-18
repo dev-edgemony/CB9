@@ -1,0 +1,44 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #111;
+}
+
+body {
+    box-sizing: border-box;
+}
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+}
+h2 {
+    font-size: 25px;
+}
+p {
+    font-size: 18px;
+}
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #111;
+    padding-bottom: 30px;
+}
+#calculator  {
+    border: none;
+}
+button {
+    background-color: #111;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+button:hover {
+    background-color: #c63d76;
+}
