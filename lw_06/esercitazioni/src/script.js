@@ -1,5 +1,4 @@
 // Esercizio 1
-
 function calculateAverage(arr) {
     let sum = 0;
     for (let numArr of arr) {
