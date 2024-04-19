@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+html {
+  font-family: "Neucha", cursive;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title,
+.subtitle {
+  color: #0678be;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.add-item-form input {
+  padding-left: 10px;
+  height: 30px;
+  border: 1px solid #0678be;
+  border-radius: 6px;
+  color: #0678be;
+  font-family: "Neucha", cursive;
+  outline: none;
+}
+
+.add-item-form input[type="submit"] {
+  background-color: #0678be;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.add-item-form input[type="submit"]:active {
+  background-color: #00578e;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  width: 240px;
+  height: 50px;
+  background-color: #0678be;
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.367);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.todo-item::before {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  content: "➡️ ";
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.todo-item:hover {
+  background-color: #e5652f;
+  color: #ffffff;
+}
