@@ -1,4 +1,4 @@
-// Esercizio 1
+// Esercizio 1 -------------------------------------------------
 const averageEl = document.querySelector(".average");
 averageEl.addEventListener("click", (event) => {
 
@@ -16,7 +16,8 @@ alert("La media dell'array è di: " + calculateAverage(arr));
 
 });
 
-// Esercizio 2
+
+// Esercizio 2 -------------------------------------------------
 const imgWrapperEl = document.querySelector(".img-wrapper");
 const imgGen = (src, alt) => {
 
@@ -35,7 +36,8 @@ const image3 = imgGen("https://picsum.photos/200/300?3", "Immagine 3 creata con 
 
 imgWrapperEl.append(image1, image2, image3);
 
-// Esercizio 3
+
+// Esercizio 3 -------------------------------------------------
 const colorChange = document.querySelector(".color-change");
 
 colorChange.addEventListener("click", (event) => {
@@ -44,7 +46,8 @@ colorChange.addEventListener("click", (event) => {
 
 });
 
-// Esercizio 4
+
+// Esercizio 4 -------------------------------------------------
 const cardWrapperEl = document.querySelector(".card-wrapper");
 const cardGen = (data) => {
 
