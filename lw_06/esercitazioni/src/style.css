@@ -43,7 +43,42 @@ button:hover {
     background-color: #e4395e;
     cursor: pointer;
 }
-.img-wrapper {
+.card-wrapper {
+    margin: 0;
+    padding: 0;
+}
+.img-wrapper, .card-wrapper ul {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrapper li {
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid #434343;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.card-wrapper h3 {
+    font-size: 20px;
+}
+.card-wrapper h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3d3c3c;
+    margin-top: -15px;
+}
+.card-wrapper p {
+    font-size: 16px;
+}
+
+
+.card-wrapper img {
+    height: 80px;
 }
