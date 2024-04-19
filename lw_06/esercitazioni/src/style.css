@@ -40,9 +40,10 @@ button {
     font-weight: 400;
 }
 button:hover {
-    background-color: #c63d76;
+    background-color: #e4395e;
+    cursor: pointer;
 }
-.es2 {
+.img-wrapper {
     display: flex;
     gap: 20px;
 }
