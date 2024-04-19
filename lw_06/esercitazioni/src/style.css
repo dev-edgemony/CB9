@@ -42,3 +42,7 @@ button {
 button:hover {
     background-color: #c63d76;
 }
+.es2 {
+    display: flex;
+    gap: 20px;
+}
