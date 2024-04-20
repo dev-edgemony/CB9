@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: aqua;
+}
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
