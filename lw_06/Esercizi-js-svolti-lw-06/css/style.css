@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: aqua;
+    background-color: rgb(138, 219, 219);
 }
 .root {
     display: flex;
@@ -13,4 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .divCont {
+    width: 100%;
+    padding: 15px;
+    /* border: 1px solid red; */
   }

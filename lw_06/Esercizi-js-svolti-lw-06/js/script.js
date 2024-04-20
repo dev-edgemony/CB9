@@ -17,35 +17,35 @@
 
 // -------------------------------------------Secondo esercizio----------------------------------------------
 
-// const imgGenerator = (imgUrl, title) => {
-// const cardEl = document.createElement("div");
-// const imgEl = document.createElement("img");
+//  const imgGenerator = (imgUrl, title) => {
+//  const cardEl = document.createElement("div");
+//  const imgEl = document.createElement("img");
 
-// cardEl.className = "immagine";
-// imgEl.className = "cardImg";
-// imgEl.src = imgUrl;
-// imgEl.alt = title;
+//  cardEl.className = "immagine";
+//  imgEl.className = "cardImg";
+//  imgEl.src = imgUrl;
+//  imgEl.alt = title;
 
-// cardEl.append(imgEl);
-// return cardEl;
-// };
+//  cardEl.append(imgEl);
+//  return cardEl;
+//  };
 
-// const rootEl = document.querySelector(".root");
+//  const rootEl = document.querySelector(".root");
 
-// const img1 = imgGenerator("https://picsum.photos/id/26/200/300",
-// "prima immagine");
-// rootEl.append(img1);
+//  const img1 = imgGenerator("https://picsum.photos/id/26/200/300",
+//  "prima immagine");
+//  rootEl.append(img1);
 
 // Questo esercizio grazie agli appunti è stato chiaro, ma se non guardo gli appunti non riesco ad essere autonomo.
 
 // --------------------------------------------------Terzo esercizio-----------------------------------------------
 
-// const divEl = document.querySelector(".divCont");
-// const btn = document.querySelector("button");
+ const divEl = document.querySelector(".divCont");
+ const btn = document.querySelector("button");
 
-// btn.addEventListener("click", () => {
-//   divEl.style.backgroundColor = "lightgreen"
-// });
+ btn.addEventListener("click", () => {
+   divEl.style.backgroundColor = "purple"
+ });
 
 // ---------------------------------------------------Esercizio avanzato-------------------------------------------
 
