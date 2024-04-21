@@ -1,0 +1,15 @@
+#root {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(185, 245, 225);
+}
+
+.button {
+    width: 50px;
+    height: 150px;
+    background-color: rgb(223, 221, 230);
+}
