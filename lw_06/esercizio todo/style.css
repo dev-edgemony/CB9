@@ -1,0 +1,106 @@
+/* Stile per il corpo della pagina */
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f0f8; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+/* Stile per il titolo principale */
+.hero {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.title {
+    color: #ff66ff; 
+    margin-bottom: 10px; 
+    text-shadow: 1px 1px 2px #b565a7;
+}
+
+.subtitle {
+    color: #b565a7; 
+    margin-bottom: 20px; 
+    text-shadow: 1px 1px 1px #ff66ff;
+}
+
+/* Stile per il form di aggiunta */
+.add-item-form {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+}
+
+/* Stile per il campo di input */
+#new-task {
+    padding: 10px; 
+    width: 300px; 
+    border: 2px solid #ff66ff; 
+    outline: none; 
+    margin-right: 10px; 
+}
+
+/* Stile per il pulsante di invio */
+.add-item-form input[type="submit"] {
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #ff66ff; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.add-item-form input[type="submit"]:hover {
+    background-color: #ff33ff; 
+    transform: translateY(-2px); 
+}
+
+/* Stile per la lista TODO */
+#tasks-list {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 20px; 
+    width: 100%; 
+    text-align: center;
+}
+
+/* Stile per gli elementi della lista TODO */
+.todo-item {
+    background-color: #ffccff; 
+    margin: 5px auto; 
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #ff99ff; 
+}
+
+/* Stile per il pulsante "Elimina Tutto" */
+.delete-all-button {
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #ff66ff; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s; 
+    margin-top: 20px; 
+}
+
+/* Effetto hover per il pulsante "Elimina Tutto" */
+.delete-all-button:hover {
+    background-color: #ff33ff; 
+    transform: translateY(-2px); 
+}
