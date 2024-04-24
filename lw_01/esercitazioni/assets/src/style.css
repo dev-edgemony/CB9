@@ -1,0 +1,220 @@
+/* regole generali */
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #111;
+    box-sizing: border-box;
+}
+main {
+    padding: 2%;
+}
+aside {
+    float: right;
+    padding: 10px; 
+}
+
+footer {
+    width: 100%;
+    height: auto; 
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+}
+footer h4{
+    color: #f5487f;
+}
+footer p{
+    color: #fff;
+    line-height: 5px;
+}
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+h1 span {
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+a{
+    color:#f5487f;
+    text-decoration: none;
+    font-weight: 500;
+}
+ol li {
+    margin-bottom: 15px;
+}
+ul li {
+    margin: 5px;
+}
+strong {
+    font-weight: 600;
+}
+em {
+    font-style: italic;
+}
+/* /regole generali */
+
+/* header e navbar */
+header {
+    text-align: left;
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+nav ul li {
+    margin-right: 10px;
+    display: inline;
+    float: left;
+}
+nav ul li a {
+    /* color: #f55951; */
+    /* color: #9854cb; */
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    text-transform: uppercase;
+}
+nav ul li a:hover, nav ul li a:active {
+    font-weight: 600;
+    color: #f5487f;
+}
+nav ul li a.active_menu {
+    font-weight: 600;
+    background-color: #f5487f;
+}
+nav ul li a.active_menu:hover, nav ul li a.active_menu:active {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+/* /header e navbar */
+
+img.io {
+    float: right;
+    margin-right: 5%;
+}
+#empty {
+    height: 350px;
+}
+
+/* form */
+form {
+    width: 40%;
+    margin-top: 20px;
+    
+}
+form {
+    margin: 10px; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0 20px 20px 20px;
+}
+label {
+    padding: 15px 10px 10px 0;
+    display: inline-block;
+}
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 30px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+input[type=submit]:hover {
+    background-color: #f5487f;
+}
+/* /form */
+
+/* blog */
+#blog {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#blog section {
+    width: 75%;
+    float: left;
+    padding-right: 10px;
+}
+article {
+    /* display: block; */
+    /* margin: 10px;  */
+    overflow: hidden;
+}
+figure {
+    /* display: block; */
+    overflow: hidden;
+    float: left;
+    padding-right: 2%;
+    margin-left: 0;
+    margin-top: 0;
+}
+figcaption {
+    font-size: 12px;
+    color: #444;
+}
+article p {
+    padding-top: 5px;
+}
+/* /blog */
+
+
+.background-image {
+    background-image: url("../media/background.jpg");
+    background-size: cover;    
+    width: 100%;
+    height: 800px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+.background-image p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.background-image .red-text {
+    color: rgb(211, 31, 31);
+}
+.background-color {
+    background-color: #f5487f;
+    width: 100%;
+    height: 800px;
+    padding: 40px;
+}
+.background-color p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

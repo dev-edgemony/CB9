@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+    <meta name="description" content="Esercizio 1 - pagina html con titolo, paragrafo, immagine, elenco"/>
+    <meta name="keywords" content="esercitazione, esercizio, html"/>
+    <link rel="stylesheet" href="assets/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <h1><span>Esercizio 1</span></h1>
+        <h2>About me</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="esercizio1.html" title="esercizio 1" class="active_menu">Esercizio 1</a></li>
+                <li><a href="esercizio2.html" title="esercizio 2">Esercizio 2</a></li>
+                <li><a href="esercizio3.html" title="esercizio 3">Esercizio 3</a></li>
+                <li><a href="esercizio4.html" title="esercizio 4">Esercizio 4</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div><img src="assets/media/io.png" alt="illustrazione di carolina" width="300" height="auto" class="io"/>
+                <h3>Ciao! Sono <strong>Carolina</strong></h3>
+                <p>Sono una <strong>Product Owner</strong>, ma anche una <strong>UX/UI Designer</strong> e adesso voglio imparare a programmare ccosì, chissà...</br>magari un giorno sarò anche una programmatrice <strong>Front-end</strong>.</p>
+            </div>
+            </br>
+            <p>Cosa mi piace:</p>
+            <ul>
+                <li>giocare con mio figlio</li>
+                <li>fare una passeggiata nella natura</li>
+                <li>rilassarmi con un bel libro</li>
+                <li>guardare film o serie tv (possibilmente sotto una bella coperta gigante)</li>
+                <li>PIZZAAAAA</li>
+            </ul>
+        </section>
+        </br>
+        <section>
+            <p>Se vuoi saperne di più, clicca <a href=esercizio3.html title="maggiori informazioni">qui</a> oppure compila il form qui sotto:</p>
+            <form action="#" method="POST">
+                <label for="f_nome">Nome:</label>
+                <input type="text" name="nome" id="f_nome" placeholder="Inserisci il tuo nome">
+
+                <label for="f_cognome">Cognome:</label>
+                <input type="text" name="cognome" id="f_cognome" placeholder="Inserisci il tuo cognome">
+
+                <label for="f_email">Email:</label>
+                <input type="email" name="email" id="f_email" placeholder="Inserisci la tua email">
+
+                <label for="f_tel">Telefono:</label>
+                <input type="tel" name="tel" id="f_tel" placeholder="Inserisci il tuo numero">
+
+                <input type="submit" value="Invia">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>Esercitazione 1</h4>
+        <p>Carolina Serra</p>
+        <p>Via di Prova 15</p>
+        <p>48123 Ferrara (FE)</p>
+    </footer>
+</body>
+</html>

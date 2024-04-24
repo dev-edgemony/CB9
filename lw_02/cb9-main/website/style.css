@@ -1,0 +1,362 @@
+
+* {
+    margin: 0; /* azzeriamo il margin (spazio esterno) di default del browser */
+    padding: 0; /* azzeriamo il padding (spazio interno) di default del browser */
+    box-sizing: border-box; /* assegnando border-box inlcudiamo border e padding alle dimensioni degli elementi */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #00004f; /* background color a tutto il body */
+    color: #ffffff; /* colore del testo bianco di default per tutto il sito (il background è scuro quindi risalta il testo) */
+    font-family: "Nunito", sans-serif; /* famiglia del font da google fonts (vedi index.html riga 8-10 per l'import) */
+    /*padding-bottom: 300px;*/ /* provvisorio, lo abbiamo inserito per dare spazio in fondo alla pagina e vedere meglio il contenuto*/
+}
+
+/* *************************************
+    HEADER
+************************************* */
+
+/* header, abbiamo assegnato l'id #main-header per essere sicuri di stilizzare l'header principale */
+#main-header {
+    position: fixed;
+    width: 100%; /* larghezza header al 100% */
+    background-color: #00004f; /* colore di sfondo */
+    z-index: 10;
+}
+
+/* Selezioniamo i link dell'header per assegnargli lo stile principale */
+#main-header a {
+    color: #FFFFFF; /* colore bianco dei link del menu */
+    text-decoration: none; /* rimuoviamo la decorazione del testo di default del browser */
+    font-size: 16px; /* grandezza del font a 16px  */
+    font-weight: bold; /* peso del font a grassetto */
+    transition: all 0.35s ease; /* aggiungiamo una transition al passaggio del mouse per rendere l'effetto di cambio colore più gradevole */
+    display: block; /* display block per definire dimensioni e spazi */
+}
+
+/* pseudo classe :hover per l'elemento <a> del menu, cambiamo colore al passaggio del mouse sul link */
+#main-header a:hover {
+    color: #56CFE1; /* cambiamo colore del link stesso */
+}
+
+/* Selezioniamo la lista non ordinata del menu */
+#main-header ul {
+    display: flex; /* assegniamo flexbox per distribuire gli elementi in orizzontale, di default flex è in orizzontale se attivato */
+    justify-content: center; /* distribuiamo il contenuto dell'elemento flex centralmente in orizzontale */
+    gap: 20px; /* inseriamo la distanza orizzontale tra gli elementi del menu */
+    list-style-type: none; /* rimuoviamo i pallini dall'elemento lista non ordinata ul */
+    padding-top: 30px; /* assegniamo un padding superiore di 30px per dare spazio all'header */
+    padding-bottom: 30px; /* assegniamo un padding inferiore di 30px per dare spazio all'header */
+}
+
+
+/* CONDIDERAZIONI RESPONSIVE, utilizziamo le media query per modificare o assegnare stili solo per determinati dispositivi o grandezze display */
+/* 
+    da 0 a 767px => mobile
+    da 768px a 1023px => tablet
+    da 1024px in poi => desktop
+*/
+
+/* Media query header per modificare la grandezza del font del menu, la aumentiamo da 16 a 18px.
+La dimensione del font del menu sarà di 16px per i disposivi mobile e tablet (vedi riga 16), 18px per grandi display come desktop.
+Nella Media query consideriamo solo i disposivi che hanno una larghezza dello schermo di almeno (min) 1024px, considerandoli come desktop
+*/
+@media only screen and (min-width: 1024px) {
+    /* Selezioniamo i link dell'header per assegnargli uno stile solo per desktop */
+    #main-header a {
+        font-size: 18px; /* grandezza font per desktop */
+    }
+}
+
+
+/* *************************************
+    HERO
+************************************* */
+
+/* hero sezione iniziale */
+.hero {
+    position: relative; /* definiamo position relative in modo da contenere gli elmenti con position absolute interni, per dare agli elementi absolute un riferimento (vedi immagine ufo) */
+    height: 100vh; /* altezza dell'elemento a 100vh, altezza dell'intera viewport (finestra del browser) */
+    width: 100%; /* larghezza dell'elemento al 100% */
+    display: flex; /* assegniamo flex alla sezione in modo da distrubuire in modo semplice gli elementi figli (il testo h1 e l'immagine rocket) */
+    flex-direction: column; /* assegniamo la nuova direzione in colonna, di default flex distribuisce gli elementi in orizzontale, nel design abbiamo un allineamento verticale  */
+    justify-content: center; /* distribuiamo gli elementi interni centralmente (di default jusfity-content distribuisce gli elementi orizzontalmente ma quando l'orientamento con flex-direction è column, come in questo caso, justify-content distribuirà gli elementi verticalmente */
+    align-items: center; /* distribuiamo gli elementi interni centralmente (di default align-items distribuisce gli elementi vericalmente ma quando l'orientamento con flex-direction è column, come in questo caso, justify-content distribuirà gli elementi verticalmente */
+    background-image: url("images/space.webp"); /* inseriamo l'immagine di sfondo della hero con background-image */
+}
+
+/* selezioniamo l'h1 all'interno della hero al quale abbiamo assegnato la classe .title */
+.hero .title {
+    font-size: 52px; /* grandezza del font del titolo a 52px */
+}
+
+/* media query per modificare la grandezza del font del titolo, applicata solo per dispositivi destkop e oltre. */
+@media only screen and (min-width: 1024px) {
+    .hero .title {
+        font-size: 74px; /* grandezza font per dektop */
+    }
+}
+
+/* selezioniamo lo span all'interno dell'h1 .title */
+.hero .title span {
+    color: #56CFE1; /* usiamo span per cambiare il colore di una sola parola o frase */
+}
+
+/* Immagine con classe ufo */
+/* per posizionare un elemento in un determinato punto della pagina o di un elemento contenitore usiamo position: absolute e definiamo le coordinate dell'elemento con right e bottom per posizionarlo in basso a destra della hero  */
+.hero .ufo {
+    position: absolute;  /* definiamo position absolute per posizionare l'immagine */
+    right: 20px; /* distanziamo l'immagine con classe .ufo di 20px da destra  */
+    bottom: 20px; /* distanziamo l'immagine  di 20px dal basso */
+}
+
+
+/* animazione immagine rocket, usiamo i keyframes per definire l'animazione */
+@keyframes rocketAnim {
+    from {
+        transform: translateY(100px); /* da una translazione verticale di 100px (verso l'alto)  */
+    }
+    to {
+        transform: translateY(0); /* a una translazione al punto di partenza */
+    }
+}
+
+/* Selezioniamo l'immagine con classe .rocket e assegniamo la proprietà animation per applicare l'animazione */
+.rocket {
+    animation: rocketAnim 2s linear infinite alternate; /* usiamo l'animazione rocketAnim con una durata di 2s, un funzione temporale lineare, continua e alternata */
+}
+
+/* animazione immagine ufo, usiamo i keyframes per definire l'animazione */
+@keyframes ufoAnim {
+    from {
+        transform: translateX(0); /* da una translazione orizzontale di 0, punto di partenza */
+    }
+    to {
+        transform: translateX(-100px); /* a una translazione orizzontale di -100px, negativa per applicare un effetto verso il centro della pagina da un punto di partenza assestato al bordo destro della pagina */
+    }
+}
+
+/* Selezioniamo l'immagine con classe .ufo e assegniamo la proprietà animation per applicare l'animazione */
+.ufo {
+    animation: ufoAnim 2s ease-in-out infinite alternate; /* usiamo l'animazione ufoAnim con una durata di 2s, un funzione temporale ease-in-out, continua e alternata */
+}
+/* end hero */
+
+
+/* *************************************
+    TEAM
+************************************* */
+
+/* sezione team */
+.team {
+    border: 1px solid aquamarine; /* bordo provvisiorio dell'elemento per visualizzarlo meglio */
+}
+
+/* Selezioniamo il titolo h2 della sezione con classe .team-title */
+.team-title {
+    text-align: center; /* allineiamo il testo del titolo centralmente */
+    padding-top: 60px; /* definiamo uno spazio interno superiore del titolo di 60pxx */
+    padding-bottom: 60px; /* definiamo uno spazio interno inferiore del titolo di 60px  */
+    font-size: 42px; /* assegniamo la grandezza del font a 42px */
+}
+
+/* selezioniamo il contenitore dei contenuti della sezione team */
+.team-container {
+    border: 1px solid green; /* bordo provvisiorio dell'elemento per visualizzarlo meglio */
+}
+
+/* selezioniamo il contenitore classe team-image, contiene l'immagine */
+.team-image {
+    border: 1px solid red; /* bordo provvisiorio dell'elemento per visualizzarlo meglio */
+    text-align: center; /* allineiamo centralmente il contenuto */
+}
+
+.team-image img {
+    /* width: 100%;
+    height: auto; */
+}
+
+/* selezioniamo il contenitore con classe team-content, contiene il contenuto testuale e il pulsante link */
+.team-content {
+    border: 1px solid yellow; /* bordo provvisiorio dell'elemento per visualizzarlo meglio */
+    height: auto; /* height, l'altezza del suo contenuto */
+    padding: 60px 20px; /* spazio interno superiore di 60px e laterale di 20px */
+}
+
+/* selezioniamo il link con classe .button-link all'interno della sezione per applicare uno spazio superiore di 40px */
+.team-content .button-link {
+    margin-top: 40px; /* spazio esterno superio di 40px */
+}
+
+/* Media query per distribuire orizzontalmente le due colonne, immagine e contenuto testuale, della sezione. 
+In questa media query definiamo delle proprietà css solo per dispositivi con un display più grande del tablet.
+Il design della sezione prevede una distribuzione verticale deli elementi per dispositivi mobile mentre un distribuzione a due colonne per dispositivi da tablet in su.
+Da tablet in su applichiamo display flex per una distribuzione degli elementi orizzontali ed assegniamo una larghezza agli elementi interni di 50% per avere due colonne della stessa larghezza.
+*/
+@media only screen and (min-width: 768px) {
+    /* selezioniamo il contenitore per applicare il display flex solo per i dispositivi da tablet in su */
+    .team-container {
+        display: flex; /* applichiamo display flex al contenitore per una visualizzazione orizzontale a due colonne */
+        align-items: center;
+    }
+    /* assegniamo una larghezza dell'elemento che contiene l'immagine, al 50% della finestra, solo per i dispositivi da tablet in su */
+    .team-image {
+        width: 50%;
+    }
+    /* assegniamo una larghezza dell'elemento che contiene il contenuto testuale ed il pulsante link, al 50% della finestra, solo per i dispositivi da tablet in su */
+    .team-content {
+        width: 50%;
+    }
+}
+/* end team */
+
+
+/* *************************************
+    BUTTON LINK
+************************************* */
+
+/* button, definiamo lo stile del pulsante link */
+.button-link {
+    display: inline-block; /* inseriamo display inline-block per definire gli spazi interni. di default un elemento <a> è di default inline, se assegniamo display:block prenderà tutta la larghezza della riga, assegnando display inline-block possiamo definire gli spazi interni e le dimensioni */
+    text-decoration: none; /* azzeriamo la decorazione di default del browser */
+    background-color: #56CFE1; /* colore di sfondo del pulsante link */
+    color: #00004f; /* colore del testo del pulsante link */
+    padding: 6px 20px; /* spazio interno superiore e inferiore di 6px e destro e sinistro di 20px */
+    border-radius: 6px; /* bordo arrotondato del pulsante */
+    font-weight: bold; /* peso in grassetto del testo del pulsante */
+    transition: background-color 0.35s ease-in-out; /* applichiamo una transizione per definire in modo più elegante il cambio colore dello sfondo */
+}
+
+/* selezioniamo tramite la pseudo classe :hover il passaggio del mouse sul pulsante */
+.button-link:hover {
+    background-color: #ffffff; /* assegniamo il nuovo colore di sfondo al passaggio del mouse */
+}
+/* end button */
+
+/* section people */
+.people {
+    background-color: #7209B7;        
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.people .people-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1024px) {
+    .people-container {
+        flex-direction: row;
+    }
+    .people .people-title {
+        font-size: 42px;
+    }
+    .card-people {
+        width: 25%;
+    }
+}
+
+.card-people {
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.card-people img {
+    border-radius: 100%;
+}
+
+.card-people h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.card-people h4 {
+    color: #56CFE1;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* end section people */
+
+
+/* .div-block {
+    border: 1px solid red;
+}
+
+.anchor-inline {
+    border: 1px solid yellow;
+    display: inline-block;
+    margin-top: 20px;
+} */
+
+/* travel */
+.travel {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.travel h2 {
+    text-align: center;
+}
+
+.travel-item {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+    .travel-item {
+        flex-direction: row-reverse;
+        align-items: center;
+    }   
+
+    .travel-item:nth-child(odd) {
+        flex-direction: row;
+    }
+    
+
+    .travel-content {
+        width: 50%;
+    }
+
+    .travel-image {
+        width: 50%;
+    }
+}
+
+.travel-content {
+    border: 1px solid yellow;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.travel-content h3 {
+    color: #56CFE1;
+    margin-bottom: 20px;
+}
+
+.travel-image {
+    border: 1px solid red;
+}
+
+.travel-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* end travel */
+

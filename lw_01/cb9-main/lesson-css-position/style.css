@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.box-static {
+    position: static;
+    left: 20px;
+    border: 1px solid red;
+}
+
+.box-relative {
+    position: relative;
+    /* left: 20px;
+    top: 20px; */
+    bottom: 0;
+
+    border: 1px solid green;
+}
+
+.box-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid blue;
+}
+
+.box-fixed {
+    position: fixed;
+    top:0;
+}
+
+.contenitore {
+    position: relative;
+    height: 200px;
+    background-color: red;
+}

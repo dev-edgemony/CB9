@@ -1,0 +1,107 @@
+
+/* 
+    1. style inline
+    2. selettore di id
+    3. selettore di classe
+    4. selettore di tipo
+*/
+
+/* commento */
+h1 {
+    color: #ff0000; /* sono un commento sul colore */
+    text-align: center;
+    border: 1px solid blue;
+    /* background-color: red; */
+    background-color: rgba(255,160,122, 0.60);
+}
+
+
+#titolo-principale {
+    color: darkblue;
+}
+
+.main-title {
+    color: skyblue;
+}
+
+
+
+h2 {
+    color: green;
+}
+
+div {
+    /* background-color: yellow; */
+}
+
+p {
+    color: blue;
+    /* background-color: violet; */
+}
+
+p a {
+    color: green;
+}
+
+/* div p {
+    background-color: red;
+} */
+
+/* * {
+    background-color: aquamarine;
+    color: blue;
+} */
+
+.sfondo-verde {
+    background-color: green;
+}
+
+h2.sottotitolo {
+    color: yellow;
+}
+
+h3 {
+    color: yellow;
+}
+
+h3.sottotitolo {
+    color: violet;
+}
+
+#main-subtitle {
+    color: brown;
+}
+
+p > span {
+    color: burlywood;
+}
+
+input[type="text"] {
+    background-color: red;
+}
+
+input.email {
+    background-color: gold;
+}
+/* un commento in css */
+input[type="password"] {
+    background-color: yellow;
+}
+
+div > input {
+    background-color: brown;
+}
+
+/* h1, .main-title, #titolo-principale {
+    background-color: brown;
+} */
+
+.astronauti {
+    /* background-image: url("images/astronauti2.JPG");
+    background-repeat: no-repeat;
+    background-size: contain; */
+    background: red url("images/IMG_4857.JPG") no-repeat center left;
+    background-size: cover;
+    text-align: justify;
+    direction: rtl;
+}

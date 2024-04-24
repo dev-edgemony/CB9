@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>HTML5 - Edgemony</title>
+        <meta name="description" content="Benvenuti al corso HTML" />
+        <meta name="keywords" content="edgemony, html, corso html" />
+    </head>
+    <body>
+        <header>
+            <p>Sono l'header</p>
+        </header>
+        <main>
+            <!-- heading -->
+            <h1 class="nomeclasse">Sono heading h1</h1>
+            <h2 class="nomeclasse">Sono heading h2</h2>
+            <h3>Sono heading h3</h3>
+            <h4>Sono heading h4</h4>
+            <h5>Sono heading h5</h5>
+            <h6>Sono heading h6</h6>
+            <!-- end heading -->
+            <p>Ciao, sono un paragrafo</p>
+            <p>Ciao, sono un <span>altro paragrafo</span></p>
+            <p>Ciao, <br/> come va?</p>
+            <!-- strong e b -->
+            <p>Ciao sono il <strong>tag strong</strong></p>
+            <p>Ciao sono il <b>tag b</b></p>
+            <!-- em e i -->
+            <p>Ciao sono il <em>tag em</em></p>
+            <p>Ciao sono il <i>tag i</i></p>
+    
+            <p>Ciao sono il <mark>tag mark</mark></p>
+            <p>Ciao sono il <ins>tag ins</ins></p>
+            <p>Ciao sono il <del>tag del</del></p>
+            <p>Ciao sono il <sup>tag sup</sup></p>
+            <p>Ciao sono il <sub>tag sub</sub></p>
+            <p>Ciao sono il <small>tag small</small></p>
+    
+            <!-- tag list -->
+            <ul>
+                <li>Primo</li>
+                <li>Secondo</li>
+                <li>...</li>
+                <li>Ultimo</li>
+            </ul>
+    
+            <ol>
+                <li>Primo</li>
+                <li>Secondo</li>
+                <li>...</li>
+                <li>Ultimo</li>
+            </ol>
+    
+            <dl>
+                <dt>Primo</dt>
+                <dd>Sono descritpion 1</dd>
+                <dt>Secondo</dt>
+                <dd>Sono descritpion 2</dd>
+            </dl>
+            <!-- end tag list -->
+    
+            <!-- links -->
+            <p>
+                <a href="https://edgemony.com" title="vai al sito edgemony">
+                    vai al sito
+                </a>
+    
+            </p>
+    
+            <p>
+                <a href="chi-siamo.html">Chi Siamo</a>
+            </p>
+            
+            <p>
+                <a target="_blank" ref="noopener noreferrer" href="chi-siamo.html">Blank link</a>
+            </p>
+            <!-- end links -->
+    
+            <!-- tag container -->
+            <div class="colore-rosso" id="color-blu">
+                <p>Sono un div</p>
+            </div>
+    
+            <article class="colore-rosso">
+                    <h2>Sono il titolo dell'articolo</h2>
+                    <p>Sono il contenuto dell'articolo</p>     
+            </article>
+    
+            <section>
+                <h2>Sono la sezione</h2>
+                <p>Sono il paragrafo della sezione</p>
+                <article>
+                    <h3>Sono articolo 1</h3>
+                </article>
+                <article>
+                    <h3>Sono articolo 2</h3>
+                </article>
+            </section>
+            <!-- end tag container -->
+    
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" title="homepage">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="chi-siamo.html" title="chi siamo">Chi siamo</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Multimedia -->
+            <!-- immagini -->
+                <img src="assets/images/banner.jpeg" alt="immagine del banner conference" width="300" height="200"/>
+
+                <figure>
+                    <img src="assets/images/banner.jpeg" alt="immagine del banner conference" width="300" height="200"/>
+                    <figcaption>una nota sulla nostra immagine</figcaption>
+                </figure>
+
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="https://placehold.co/900x400">
+                    <source media="(min-width: 768px)" srcset="https://placehold.co/800x400">
+                    <source media="(min-width:0px)" srcset="https://placehold.co/400x400">
+                    <img src="https://placehold.co/600x400" alt="description">
+                </picture>
+
+                <!-- video -->
+                <video 
+                    src="assets/videos/video.mp4"
+                    autoplay
+                    muted
+                    loop
+                    poster="assets/videos/placeholder.png"
+                ></video>
+            <!-- end Multimedia -->
+
+            <!-- <iframe
+                src="https://edgemony.com/"
+                width="800"
+                height="400"
+            >
+            </iframe> -->
+            <br/>
+            <br/>
+            <form action="">
+                <div>
+                    <input type="text" name="nome" placeholder="scrivi qui il tuo nome" required />
+                    <input type="email" name="email" placeholder="scrivi qui la tua mail" required />
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="scrivi qui la tua password" required />
+                    <input type="number" name="numero" placeholder="inserisci un numero" min="0" max="100" step="10" />
+                </div>
+                <div>
+                    <input type="tel" name="telefono" placeholder="il tuo numero" />
+                    <input type="hidden" name="prodotto" value="ID10100" />
+                </div>
+                <div>
+                    <textarea name="messaggio" rows="20" cols="50"></textarea>
+                </div>
+
+                <div>
+                    <h3>Quale linguaggio preferisci?</h3>
+                    <label for="html">Html</label>
+                    <input type="radio" id="html" name="scelta" value="html">
+                    <label for="css">Css</label>
+                    <input type="radio" id="css" name="scelta" value="css">
+                    <label for="javascript">Javascript</label>
+                    <input type="radio" id="javascript" name="scelta" value="javascript">
+                </div>
+                
+                <div>
+                    <h3>Quale linguaggio conosci?</h3>
+                    <label for="html">Html</label>
+                    <input type="checkbox" id="html" name="linguaggio" value="html">
+                    <label for="css">css</label>
+                    <input type="checkbox" id="css" name="linguaggio" value="css">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" id="javascript" name="linguaggio" value="javascript">
+                </div>
+
+                <div>
+                    <input type="range" name="rating" min="0" max="100" step="20" value="100">
+                </div>
+
+                <div>
+                    <input type="color" name="colore-preferito">
+                </div>
+
+                <div>
+                    <select name="dev" id="dev">
+                        <option value="frontend">Front End</option>
+                        <option value="backend">Back End</option>
+                    </select>
+                </div>
+                <br/> <br/>
+                <div>
+                    <input type="file" name="cv" multiple accept=".pdf"> 
+                </div>
+                <br/> <br/>
+                <div>
+                    <input type="submit" value="invia">
+                    <input type="reset" value="cancella">
+                </div>
+            </form>
+
+            <!-- end form -->
+
+            <!-- table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Doe</td>
+                        <td>janedoe@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mr</td>
+                        <td>Wolf</td>
+                        <td>mrwolf@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- end table -->
+        </main>
+        <aside>
+            sono la sidebar
+        </aside>
+        <footer>Sono il footer</footer>
+    </body>
+</html>

@@ -1,0 +1,433 @@
+/* 
+    colors:
+    #2C3E50
+    #3498DB
+    #ECF0F1
+    #FFFFFF
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/**************************** 
+    HEADER 
+**************************** */
+#main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.header-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.header-menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2C3E50;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-menu a:hover {
+    color: #3498DB;
+}
+
+/**************************** 
+    BUTTON LINK
+**************************** */
+.button-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-weight: bold;
+    background-color: #3498DB;
+    border: 1px solid #3498DB   ;
+    color: #2C3E50;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+.button-link:hover {
+    color: #3498DB;
+    background-color: #2C3E50;
+}
+
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons-container .button-link {
+    margin-top: 40px;
+}
+
+/**************************** 
+    HERO
+**************************** */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #2C3E50;
+    color: #ffffff;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    margin-bottom: 20px;
+}
+
+.hero .buttons-container {
+    justify-content: center;
+}
+
+
+
+/**************************** 
+    SECTION ONE
+**************************** */
+.section-one {
+    padding: 40px 20px;
+}
+.section-one h2 {
+    text-align: center;
+}
+.section-one-content {
+    margin-top: 40px;
+}
+
+.section-one-text {
+    margin-bottom: 40px;
+}
+
+.section-one-text .button-link {
+    margin-top: 40px;
+}
+
+.section-one-image {
+    text-align: center;
+}
+
+.section-one-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .section-one-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-one-text {
+        padding: 40px;
+        width: 50%;
+    }
+    .section-one-image {
+        width: 50%;
+    }
+}
+
+/**************************** 
+    SECTION TWO
+**************************** */
+.section-two {
+    padding: 40px 20px;
+    background-color: #2C3E50;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-two h2 {
+    margin-bottom: 20px;
+}
+
+.section-two-content {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-two-card {
+    margin-bottom: 40px;
+}
+
+.section-two-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.section-two-card .button-link {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-two-content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .section-two-card {
+        width: 25%;
+    }
+}
+
+/**************************** 
+    SECTION THREE
+**************************** */
+.section-three {
+    padding: 40px 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/1920x1080.svg");
+    background-position: center center;
+}
+/* end section three */
+
+/**************************** 
+    SECTION FOUR
+**************************** */
+.section-four {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2C3E50;
+    color: #ffffff;
+}
+
+.section-four-title {
+    min-height: 400px;
+    background-image: url("images/400x400.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.section-four-content {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.section-four .button-link {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-four-title, .section-four-content {
+        width: 50%;
+    }
+}
+
+.section-four.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/**************************** 
+    SECTION FIVE
+**************************** */
+.section-five-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-five-card {
+    position: relative;
+    width: 50%;
+    min-height: 300px;
+    border: 1px solid #2C3E50;
+}
+
+.section-five-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-five-card .icon-heart {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.35s ease;
+}
+
+.section-five-card .icon-heart:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 1024px) {
+    .section-five-card {
+        width: 25%;
+    }
+}
+
+/**************************** 
+    SECTION SIX
+**************************** */
+.section-six {
+    padding: 40px 20px;
+}
+
+.section-six h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-six {
+    border: 1px solid #ECF0F1;
+    width: 100%;
+}
+
+.card-six-image {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.card-six-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-six-content {
+    padding: 20px;
+}
+
+.card-six-content h3 {
+    margin-bottom: 20px;
+}
+
+.card-six-content .button-link {
+    margin-top: 20px;
+}
+
+.card-six-image .label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 6px 12px;
+}
+
+/* media query per desktop */
+@media only screen and (min-width: 1024px) {
+    .section-six-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .card-six {
+        width: 25%;
+    }
+}
+
+/**************************** 
+    SECTION SEVEN
+**************************** */
+
+.section-seven {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-seven video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-seven h2 {
+    position: relative;
+}
+
+/**************************** 
+    SECTION EIGHT
+**************************** */
+
+.section-eight {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-eight img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-eight h2 {
+    position: relative;
+}
