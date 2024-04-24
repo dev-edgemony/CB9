@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+
+body {
+  color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 98vh;
+  font-family: sans-serif;
+}
+
+.image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 0, 113, 0.44021358543417366) 0%,
+    rgba(0, 212, 255, 0.4374124649859944) 100%
+  );
+  z-index: -1;
+}
+
+.date {
+  position: absolute;
+  top: 160px;
+  padding: 0 40px;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.quote {
+  padding: 0 40px;
+  font-family: "Charm", cursive;
+  text-align: center;
+}
+
+.quote h1 {
+  font-size: 2.8rem;
+}
+
+.quote p {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.quote p::before {
+  content: "(";
+}
+
+.quote p::after {
+  content: ")";
+}
