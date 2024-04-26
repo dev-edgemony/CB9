@@ -43,3 +43,62 @@ button:hover {
     background-color: #e4395e;
     cursor: pointer;
 }
+/* .root {
+   
+} */
+/* 
+Carousel scrollabile
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 30px;
+}
+.card-wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    scroll-snap-align: start;
+    transition: transform 0.35s;
+    cursor: pointer;
+} */
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.card-wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.35s;
+}
+.card-wrapper div:hover {
+    transform: scale(1.1);
+}
+.card-title {
+    display: none;
+}
+.card-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.35s;
+    border-radius: 15px;
+}
+.card-image:hover {
+    transform: scale(1.1);
+}
