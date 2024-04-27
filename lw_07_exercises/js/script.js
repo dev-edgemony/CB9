@@ -39,7 +39,7 @@ const imageCardGen = (imageURL) => {
 
   imgWrapEl.addEventListener("click", () => {
     removeModal();
-    document.body.appendChild(modalGen(imageURL, "AuthorID Placeholder"));
+    document.body.appendChild(modalGen(imageURL));
   });
 
   return imgWrapEl;
