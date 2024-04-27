@@ -39,7 +39,7 @@ const genInputSearchEl = () => {
 
 // Logic
 const BASE_URL = "https://api.unsplash.com";
-const API_TOKEN = "_8UK605rPGobs_oRRT7u2jYR_JUSyFYWC05yeHSHeao";
+const API_TOKEN = "R6tVX665_I0nWzo6YMwTWffoOMBaWWPb68-W4s75hMM";
 const SEARCH_QUERY = "butterfly";
 const PAGE = 2;
 const PER_PAGE = 30;
