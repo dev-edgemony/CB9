@@ -20,6 +20,11 @@ body {
   border-radius: 8px;
   width: 250px;
   height: 400px;
+  transition: transform 0.35s;
+}
+
+.image-wrapper:active {
+  transform: scale(0.8);
 }
 
 .image {
@@ -27,6 +32,15 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
+  filter: grayscale(1) contrast(1.2);
+  transition: filter 0.35s;
+  transition: transform 0.35s;
+}
+
+.image:hover {
+  filter: grayscale(0) contrast(1.2);
+  transform: scale(1.03);
 }
 
 .modal-wrapper {
@@ -50,6 +64,7 @@ body {
   display: block;
   margin-bottom: 20px;
   border-radius: 8px;
+  filter: contrast(1.2);
 }
 
 .modal-close {
