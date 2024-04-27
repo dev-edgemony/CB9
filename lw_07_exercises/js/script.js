@@ -22,57 +22,72 @@
 
 // > Eventualmente, per chi vuole magari andare oltre la modale provando qualche elemento customizzato a piacere, siate liberi di sostituire la logica della modale con qualcosa di vostro gradimento, purchè porti la logica dell'applicazione ad un livello più avanzato.
 
-// Consts
+// Elements Creation
 
-// image gen
-const imageElGen = (imageURL) => {
-  const imageContainerEL = document.createElement("div");
-  const imgEl = document.createElement("img");
+const cE = (name) => document.createElement(name);
 
-  imageContainerEL.className = "image--wrapper";
+const imageCardGen = (imageURL) => {
+  const imgWrapEl = cE("div");
+  imgWrapEl.className = "image-wrapper";
+
+  const imgEl = cE("img");
   imgEl.className = "image";
-
   imgEl.src = imageURL.urls.small;
   imgEl.alt = imageURL.alt_description;
 
-  //   imageContainerEL.addEventListener("click", () => {
-  //     const modalContent = modalEventGen(imageURL, authorID); // Call modalEventGen and pass imageURL and authorID
-  //     document.body.append(modalContent); // Append modal content to body
-  //   });
+  imgWrapEl.append(imgEl);
 
-  imageContainerEL.append(imgEl);
-  return imageContainerEL;
+  imgWrapEl.addEventListener("click", () => {
+    removeModal();
+    document.body.appendChild(modalGen(imageURL, "AuthorID Placeholder"));
+  });
+
+  return imgWrapEl;
 };
 
-// image wrapper gen
-const imageWrapElGen = () => {
-  const wrapperEl = document.createElement("div");
+const imagesWrapperElGen = () => {
+  const mainWrapperEl = cE("div");
+  mainWrapperEl.className = "main-wrapper";
 
-  wrapperEl.className = "main--wrapper";
-
-  return wrapperEl;
+  return mainWrapperEl;
 };
 
-// modal gen
-const modalEventGen = (imageURL, authorID) => {
-  const imgModDivEl = document.createElement("div");
-  const imgModEl = document.createElement("img");
-  const authorEl = document.createElement("p");
+const modalGen = (imageURL) => {
+  const modalWrapEl = cE("div");
+  modalWrapEl.className = "modal-wrapper";
 
-  imgModDivEl.className = "modal";
-  imgModEl.className = "modal-image";
-  authorEl.className = "modal-author";
+  const modalImgEl = cE("img");
+  modalImgEl.className = "modal-image";
+  modalImgEl.src = imageURL.urls.full;
+  modalImgEl.alt = imageURL.alt_description;
 
-  imgModEl.src = imageURL.urls.full;
-  imgModEl.alt = imageURL.alt_description;
-  authorEl.textContent = authorID.user.id;
+  const modalDescriptionEl = cE("p");
+  modalDescriptionEl.className = "description";
+  modalDescriptionEl.textContent = `Title: ${imageURL.user.instagram_username}`;
 
-  imgModDivEl.append(imgModEl, authorEl);
+  const modalAuthorEl = cE("p");
+  modalAuthorEl.className = "author";
+  modalAuthorEl.textContent = `Instagram: ${imageURL.user.instagram_username}`;
 
-  return imgModDivEl;
+  const modalBtnEl = cE("button");
+  modalBtnEl.className = "modal-close";
+  modalBtnEl.textContent = "Close";
+
+  modalWrapEl.append(modalImgEl, modalDescriptionEl, modalAuthorEl, modalBtnEl);
+
+  modalBtnEl.addEventListener("click", () => removeModal());
+
+  return modalWrapEl;
 };
 
-const wrapEl = imageWrapElGen();
+// Remove Modal
+
+function removeModal() {
+  const existingModal = document.querySelector(".modal-wrapper");
+  if (existingModal) {
+    existingModal.remove();
+  }
+}
 
 // LOGIC
 const BASE_URL = "https://api.unsplash.com/";
@@ -81,20 +96,15 @@ const SEARCH_KEY = "cat";
 const PAGE = 1;
 const PER_PAGE = 20;
 const rootEl = document.querySelector("#root");
+const wrapperEl = imagesWrapperElGen();
 
 fetch(
   `${BASE_URL}search/photos/?client_id=${ACCESS_KEY}&query=${SEARCH_KEY}&page=${PAGE}&per_page=${PER_PAGE}`
 )
   .then((res) => res.json())
   .then((data) => {
-    const resultEl = data.results;
-    console.log(resultEl);
-
-    resultEl.map((photo) => {
-      const imageList = imageElGen(photo);
-
-      wrapEl.append(imageList);
+    data.results.forEach((photo) => {
+      wrapperEl.append(imageCardGen(photo));
     });
-
-    rootEl.append(wrapEl);
+    rootEl.appendChild(wrapperEl);
   });
