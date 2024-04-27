@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Helvetica', 'Arial', sans-serif; 
-  background-color: #f7f7f7; 
+  background: linear-gradient(135deg, #f8b7c0, #ffe4e1);
 }
 
 /* Root Element */
@@ -13,7 +13,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 40px;
-  background-color: white; 
+  background-color: #ffe4e1;
 }
 
 /* Titolo */
