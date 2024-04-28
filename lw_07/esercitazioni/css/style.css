@@ -1,0 +1,21 @@
+body {
+    background-color: #788882;
+}
+
+.img--wrapper {
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgEl {
+    display: flex;
+    filter:grayscale(0.5) contrast(1.8);
+    
+}
+
+.imgList {
+    text-align: center;
+    font: 5em sans-serif;
+}
