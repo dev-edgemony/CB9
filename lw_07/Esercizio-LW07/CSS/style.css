@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+
+.boxInput {
+    display: flex;
+    gap: 20px;
+}
+
+.inputSrc {
+    border: none;
+    background-color: transparent;
+}
+
+.btnSrc {
+    border: none;
+}
+
+.box-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px 15px;
+    
+}
+
+
+
+.boxCard:active{
+    transform: scale(0.5);
+}
+
+.imgCard {
+    border-radius: 100%;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    filter: blur(4px);
+    transition: filter 1s;
+
+}
+
+.imgCard:hover {
+    filter: blur(0) contrast(1.3);
+}
+
