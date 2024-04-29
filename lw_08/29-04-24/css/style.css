@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  background-color: #326de8;
+  font-family: 'Press Start 2P', system-ui;
+}
+
+a {
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar svg {
+  width: 120px;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__user {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__user li {
+  cursor: pointer;
+}
+
+.navbar__user li:hover {
+  transform: scale(1.2);
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.characters--item {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  width: 200px;
+  background-color: #ffffff;
+  color: #141414;
+  text-shadow: 3px 3px 0px #bbf374;
+}
+
+.characters--item img {
+  width: 200px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.characters--item h3 {
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.modal ul li {
+  padding: 8px 16px;
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.modal ul li:hover {
+  background-color: #bbf374;
+  color: #141414;
+}
+
+.modal h3 {
+  padding: 0 20px;
+  color: #bbf374;
+  text-shadow: 6px 6px 0px #141414;
+  font-size: 2rem;
+}
+
+.modal p {
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+}
+
+.modal button {
+  height: 40px;
+  width: 300px;
+  background-color: #bbf374;
+  border: 2px solid #141414;
+  color: #141414;
+  font-weight: bold;
+}
+
+.modal img {
+  width: 100%;
+}
