@@ -1,0 +1,77 @@
+/*  container */
+.container {
+    width: 90%; 
+    max-width: 800px;
+    padding: 25px; 
+    box-sizing: border-box;
+    background-color: #e0e0e0; 
+    margin: 25px auto;
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #d0d0d0; 
+}
+
+/*  titolo */
+.title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 28px; 
+    color: #222; 
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+.title:hover {
+    color: #0077cc; 
+}
+
+/*  immagini */
+.img {
+    display: block;
+    max-width: 75%; 
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/*paragrafi */
+.paragraph {
+    font-family: 'Verdana', sans-serif; 
+    font-size: 16px; 
+    color: #333; 
+    line-height: 1.6;
+    text-align: left; 
+    margin: 20px 0;
+    padding: 0 15px; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* messaggi */
+.message {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* messaggi di successo */
+.success {
+    background-color: #4CAF50; 
+}
+
+/* messaggi di errore */
+.error {
+    background-color: #F44336; 
+}
