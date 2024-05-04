@@ -23,10 +23,10 @@ function ImgGen(src) {
 
 // Creo un paragrafo (p)
 function ParagraphGen(text) {
-    const p = document.createElement('p');
-    p.textContent = text;
-    p.className = 'paragraph';
-    return p;
+    const desc = document.createElement('p');
+    desc.textContent = text;
+    desc.className = 'paragraph';
+    return desc;
 }
 
 // Mostra un messaggio direttamente sulla pagina
@@ -39,7 +39,7 @@ function showMessage(message, isSuccess = true) {
 }
 
 // Funzione per creare un nuovo Prodotto
-function Prodotto(title, imageSrc, description) {
+function NewProduct(title, imageSrc, description) {
     // Creo un container esterno per il prodotto
     const productContainer = Container();
 
@@ -57,31 +57,31 @@ function Prodotto(title, imageSrc, description) {
     return productContainer;
 }
 
-// Carico i dati dell'API e creo gli elementi sulla pagina
-function loadProductData() {
-    fetch('https://fakestoreapi.com/products/1')
+// Carico i dati dell'API e creo i prodotti sulla pagina
+function loadAllProducts() {
+    fetch('https://fakestoreapi.com/products')
         .then(response => {
-            // Se c'è una risposta
+            // Controllo la risposta
             if (!response.ok) {
                 throw new Error('Il Network non risponde: ' + response.statusText);
             }
             return response.json();
         })
-        .then(data => {
+        .then(products => {
             // Messaggio di successo
-            showMessage(`Successo: Il prodotto è ${data.title}.`);
+            showMessage(`Successo: Caricati ${products.length} prodotti.`);
 
-            // Creo il componente Prodotto usando i dati ricevuti
-            const product = Prodotto(data.title, data.image, data.description);
-
-            // Aggiunto il prodotto al documento
-            document.body.appendChild(product);
+            // forEach per ogni nuovo prodotto
+            products.forEach(product => {
+                const productElement = NewProduct(product.title, product.image, product.description);
+                document.body.appendChild(productElement);
+            });
         })
         .catch(error => {
-            // Se non c'è: messaggio di errore
+            // In caso di errore
             showMessage(`Errore: ${error.message}`, false);
         });
 }
 
 // Avvio della funzione per caricare i dati
-loadProductData();
+loadAllProducts();
