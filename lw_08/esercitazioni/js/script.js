@@ -1,50 +1,39 @@
-//-----ESERCITAZIONE Unsplash e selettore immagini----////
+// https://fakestoreapi.com/products/1
 
-const imgGen = (imgData) => {
-  const wrapperEl = document.createElement("div");
+const elementGen = (data) => {
+  const contEl = document.createElement("div");
+
+  contEl.className = "container";
+
+  const titleEl = document.createElement("h1");
+
+  titleEl.className = "main__title";
+  titleEl.textContent = data.title;
+
   const imgEl = document.createElement("img");
 
-  wrapperEl.className = "img--wrapper";
-  imgEl.className = "imgEl";
-  imgEl.src = imgData.urls.small;
-  imgEl.alt = imgData.alt_description;
+  imgEl.className = "image";
+  imgEl.src = data.image;
+  imgEl.alt = data.alt;
 
-  wrapperEl.addEventListener("click", () => {
-    window.open(imgData.urls.full, "_blank");
-  });
+  const textEl = document.createElement("p");
 
-  wrapperEl.append(imgEl);
-  return wrapperEl;
+  textEl.className = "description";
+  textEl.textContent = data.description;
+
+  contEl.append(titleEl, imgEl, textEl);
+  return contEl;
 };
 
-const ImgListEl = (imgList) => {
-  const wrapperList = document.createElement("div");
-  const listTitle = document.createElement("h3");
-
-  wrapperList.className = "imgList";
-  listTitle.textContent = imgList;
-
-  wrapperList.append(listTitle);
-  return wrapperList;
-};
-
-const BASE_URL = "https://api.unsplash.com";
-const API_TOKEN = "usEey9f7mX9cID_VGyfjztK8YeIYTKaA5CRB8aQjgiY";
-const SEARCH_QUERY = "Tattoo";
-const PAGE = 2;
-const PER_PAGE = 20;
 const ROOT_EL = document.querySelector(".root");
 
-fetch(
-  `${BASE_URL}/search/photos/?client_id=${API_TOKEN}&query=${SEARCH_QUERY}&per_page=${PER_PAGE}&page=${PAGE}`
-)
+const BASE_URL = "https://fakestoreapi.com/products/8";
+fetch(`${BASE_URL}`)
   .then((res) => res.json())
   .then((data) => {
-    const wrapperList = ImgListEl("Tattoo Images");
-
-    data.results.forEach((photo) => {
-      wrapperList.append(imgGen(photo));
-    });
-
-    ROOT_EL.append(wrapperList);
+    const wrapperEl = elementGen(data);
+    ROOT_EL.append(wrapperEl);
+  })
+  .catch((error) => {
+    ROOT_EL.append(error);
   });

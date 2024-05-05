@@ -1,0 +1,28 @@
+body {
+  padding: 0px;
+  background-color: #92f0eb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.main__title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.image {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  width: 300px;
+  background-color: #ffffff;
+}
+
+.description {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+}
