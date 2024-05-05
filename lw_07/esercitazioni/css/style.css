@@ -12,7 +12,6 @@ body {
 .imgEl {
     display: flex;
     filter:grayscale(0.5) contrast(1.8);
-    
 }
 
 .imgList {
