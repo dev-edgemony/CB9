@@ -1,0 +1,201 @@
+/* Reset di base per margini e padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Usa Roboto per un look moderno */
+    background-color: #121212; /* Tema scuro per i servizi di streaming */
+    color: #ffffff; /* Testo bianco per leggibilità */
+    overflow-x: hidden; /* Previene lo scroll orizzontale */
+}
+
+/* Stili per l'header e la barra di navigazione */
+header.site--bar {
+    background-color: #1c1c1c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site--name {
+    font-size: 24px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Stili per la barra di ricerca */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Sezione Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stili per le cards dei film */
+.movies--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Stili per la paginazione */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per il footer */
+footer.more {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.more--credit a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.more--credit a:hover {
+    text-decoration: underline;
+}
+
+/* Adattamenti responsivi per dispositivi mobili */
+@media (max-width: 768px) {
+    header.site--bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site--name, .navigation {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation li {
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #444;
+        padding: 10px 0;
+    }
+
+    .navigation a:hover {
+        background-color: #333;
+        color: #00bfff;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .search-container input, .search-container button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}

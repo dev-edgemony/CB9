@@ -1,0 +1,85 @@
+@import url('../css/style.css'); 
+
+
+#movie-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #282828; 
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#movie-title {
+    font-size: 2.5rem;
+    color: #E50914; 
+    margin-bottom: 20px;
+}
+
+
+#movie-genre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF; 
+    margin: 10px 0;
+}
+
+
+#movie-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+#movie-image {
+    max-width: 200px; 
+    max-height: 400px; 
+    width: auto; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin-top: 20px;
+}
+
+
+.backButton {
+    padding: 10px 20px;
+    background-color: #FF6347; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    align-self: flex-start; 
+}
+
+.backButton:hover {
+    background-color: #FF4500;
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    #movie-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    #movie-title {
+        font-size: 2rem; 
+    }
+
+    #movie-description {
+        font-size: 0.9rem;
+    }
+}
