@@ -1,4 +1,4 @@
-import { createEl, find, findAll, log } from './helpers.js'
+ import { createEl, find, findAll, log } from './helpers.js'
 import NavigationLink from './components/NavigationLink.js'
 import Product from './components/Product.js'
 
