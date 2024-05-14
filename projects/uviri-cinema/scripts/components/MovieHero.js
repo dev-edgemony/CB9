@@ -1,7 +1,5 @@
 import { createEl } from '../helpers.js';
 import { fetchMovies } from '../App.js';
-import { apiKey, apiToken } from '../env.js';
-
 
 // hero
 export const setupMovieHero = () => {
@@ -9,7 +7,7 @@ export const setupMovieHero = () => {
     fetchMovies('tv/popular', 1)
         .then(data => {
             // se presenti:
-            if (data.results.length > 0) {
+            if (data && data.results) {
                 updateHeroSection(data.results[0]);
             }
         })

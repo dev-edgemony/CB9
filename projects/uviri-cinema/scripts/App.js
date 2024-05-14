@@ -1,4 +1,3 @@
-import { createEl } from './helpers.js';
 import { apiKey, apiToken } from './env.js';
 import { NavigationLink } from './components/NavigationLink.js';
 import { MovieCard } from './components/MovieCards.js';
@@ -14,7 +13,9 @@ let currentPage = 1;
 // funzione per recuperare film dal server utilizzando la fetch
 export const fetchMovies = (endpoint, page = currentPage) => {
     console.log(`Recupero dei film dall'endpoint: ${endpoint} alla pagina: ${page}`);
-    return fetch(`${baseUrl}/${endpoint}?api_key=${apiKey}&page=${page}`, {
+    const url = `${baseUrl}/${endpoint}?api_key=${apiKey}&page=${page}`;
+
+    return fetch(url, {
         headers: { 'Authorization': `Bearer ${apiToken}` }
     })
     .then(response => {
@@ -23,11 +24,11 @@ export const fetchMovies = (endpoint, page = currentPage) => {
     })
     .then(data => {
         console.log(data); 
-        return data;  
+        return data;
     })
     .catch(error => {
         console.error('Errore nel recupero dei dati:', error);
-        return null;  
+        return null;
     });
 };
 

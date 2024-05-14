@@ -1,42 +1,64 @@
 import { createEl } from '../helpers.js';
 import { fetchMovies, createMovieList } from '../App.js';
 
-
 export const setupSearchBar = () => {
-    //contenitore barra di ricerca
+    // container searchbar
     const container = createEl('div', { className: 'search-container' });
-    const input = createEl('input', { type: 'text', placeholder: 'Cerca film...' });
+    // placeholder dell'input per la ricerca
+    const input = createEl('input', { type: 'text', placeholder: 'Inserisci il titolo del film...' });
+    // bottone ricerca
     const button = createEl('button', { textContent: 'Cerca' });
 
+    // funzione async per la ricerca
     const performSearch = async (query) => {
-        const trimmedQuery = query.trim(); //senza spazi
-        if (!trimmedQuery) {
-            console.log('Per favore, inserisci il nome di un film.');
+        // se la query è vuota:
+        if (!query) {
+            console.log('Per favore, inserisci il titolo di un film.');
             return;
         }
-    
-        console.log(`Stai cercando: ${trimmedQuery}`); 
+
+        // rimozione degli spazi 
+        const trimmedQuery = query.trim();
+        if (!trimmedQuery) {
+            console.log('Inserisci qualcosa!');
+            return;
+        }
+
+        // console.log del titolo ricercato
+        console.log(`Stai cercando: ${trimmedQuery}`);
         try {
-            const data = await fetchMovies(`search/movie?query=${encodeURIComponent(trimmedQuery)}`);
-            if (data && data.results.length > 0) {
+            // endpoint dell'API
+            const endpoint = `search/movie?query=${encodeURIComponent(trimmedQuery)}&language=en-US`;
+            const data = await fetchMovies(endpoint);
+            // risposte dell'API
+            console.log('Risposta API:', data);
+            // se ci sono risultati, visualizza:
+            if (data && data.results && data.results.length > 0) {
                 createMovieList(data.results);
             } else {
+                // se non ci sono:
                 console.log('Non ci sono risultati.');
             }
         } catch (error) {
-            console.error('Errore:', error);
+            // errori:
+            console.error('Errore nella ricerca del film:', error);
         }
     };
 
+    // evento per il click sul bottone di ricerca
     button.addEventListener('click', () => performSearch(input.value));
+    // evento per il click su Enter
     input.addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
+            event.preventDefault(); 
             performSearch(input.value);
         }
     });
 
+    // append input e bottone della search bar
     container.appendChild(input);
     container.appendChild(button);
 
+    // return contenitore
     return container;
 };
