@@ -27,12 +27,19 @@ header {
     text-decoration: none;
     transition: transform 250ms ease-in-out;
     font-size: 18px;
+    font-weight: 400;
 }
 
-.header-menu li a:hover {
+#active {
     color: var(--red);
-    font-weight: 300;
+    font-weight: 400;
 }
+
+.header-menu li a:hover, #active:hover {
+    color: var(--red);
+    font-size: 19px;
+}
+
 
 .search-input {
     display: inline-block;

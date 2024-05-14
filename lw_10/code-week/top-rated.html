@@ -6,7 +6,6 @@
   <title>QuickFlix</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/top-rated.js" type="module"></script>
-  <script src="js/components/Search.js" type="module"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -17,9 +16,10 @@
     <img src="media/Title.svg" class="logo" alt="QuickFlix logo">
     <ul class="header-menu">
       <li><a href = "index.html" alt = "trending">Trending</a></li>
-      <li><a href = "top-rated.html" alt = "top-rated" class = "active">Top rated</a></li>
-      <li><a href = "new.html" alt = "new">New</a></li>
-      <li class = "search">
+      <li><a href = "top-rated.html" alt = "top-rated" id ="active">Top Rated</a></li>
+      <li><a href = "today.html" alt = "today">Today</a></li>
+      <li class = "search"> 
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" class="search-input" placeholder="Search TV Shows">
       </li>
       
@@ -32,7 +32,8 @@
   </section>
 
   <footer>
-    <img src="media/Title.svg" class="logo" alt="QuickFlix logo">
+    <img src="media/Title.svg" class="logo" alt="QuickFlix logo" width="200px" height="100px">
+    <p>Developed by <a href="https://www.linkedin.com/in/carolina-serra/" alt ="Carolina Serra - contacts" target="_blank" rel="noopener noreferrer">Carolina Serra</a> as Edgemony's CB9 Code Week Project</p>
   </footer>
 </body>
 </html>
