@@ -1,5 +1,7 @@
 import { createEl } from '../helpers.js';
 import { fetchMovies } from '../App.js';
+import { apiKey, apiToken } from '../env.js';
+
 
 // hero
 export const setupMovieHero = () => {

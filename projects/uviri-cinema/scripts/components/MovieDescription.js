@@ -1,4 +1,5 @@
 import { createEl } from '../helpers.js'; 
+import { apiKey } from '../env.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     // parametri dall'URL
@@ -18,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // funzione per ricevere i dettagli dei film
 function fetchMovieDetails(id) {
-    // API key
-    const apiKey = 'ddefc2488a275853fb43bad216a6b9c0';
     // URL base
     const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`;
 

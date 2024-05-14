@@ -1,6 +1,7 @@
 import { createEl } from '../helpers.js';
 
 
+
 export const MovieCard = ({ id, title, image }) => {
     //div come container principale delle card dei film
     const card = createEl('div', { className: 'movie-card' });

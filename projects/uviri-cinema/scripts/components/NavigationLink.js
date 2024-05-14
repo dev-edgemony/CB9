@@ -1,6 +1,7 @@
 import { createEl } from '../helpers.js';
 import { fetchMovies, createMovieList } from '../App.js';
 
+
 export const NavigationLink = ({ content, genreId, children = [], isDropdown = false } = {}) => {
     //contenitore dei link
     const navItem = createEl('li', { className: 'nav-item' });
