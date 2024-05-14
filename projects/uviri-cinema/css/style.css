@@ -17,8 +17,9 @@ header.site--bar {
     align-items: center;
 }
 
-.site--name {
-    font-size: 24px;
+.site--name img {
+    height: 60px;  
+    width: auto;
 }
 
 .navigation {
@@ -172,9 +173,9 @@ footer.more {
         align-items: flex-start;
     }
 
-    .site--name, .navigation {
-        width: 100%;
-        text-align: center;
+    .site--name img {
+        height: 50px;  
+        width: auto;
     }
 
     .navigation li {
