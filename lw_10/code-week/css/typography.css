@@ -1,0 +1,17 @@
+/***********************************************************
+    TYPOGRAPHY RULES
+************************************************************/
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-genre {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-size: 14px;
+}

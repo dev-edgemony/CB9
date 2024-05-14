@@ -1,0 +1,35 @@
+/***********************************************************
+    REGOLE BASE PER LA WEBAPP
+************************************************************/
+
+:root {
+    --black: #111115;
+    --dark: #16161B;
+    --white: #f7f7f7;
+    --light: #D9D9D9;
+    --darkgrey: #2A2A33;
+    --grey: #999898;
+    --salmon: #F16666;
+    --red: #EF233C;
+    --darkred: #BD182C;
+    --purple: #A123EF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.main {
+    padding: 3%;
+}
+
