@@ -1,4 +1,4 @@
-import { createEl } from '../helpers.js'
+import { createEl } from './Helpers.js'
 
 const Image = ({ alt = 'This is an image', className = 'image', src } = {}) => {
   const el = createEl('img')

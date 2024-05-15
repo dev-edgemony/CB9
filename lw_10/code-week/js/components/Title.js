@@ -1,4 +1,4 @@
-import { createEl } from '../helpers.js'
+import { createEl } from './Helpers.js'
 
 const Title = ({ className = 'title', text }) => {
   const el = createEl('h3')

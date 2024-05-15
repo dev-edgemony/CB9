@@ -1,98 +1,80 @@
-// IMPORT
-import { createEl, find } from './helpers.js'; 
-// import searchEl from './components/Search.js'
+// IMPORT: importa i file js esterni che vengono richiamati in questo
+import { createEl, find } from './components/Helpers.js';
 import Image from './components/Image.js';
+import Title from './components/Title.js';
 import Text from './components/Text.js';
-import getGenresByIds from './components/Genres.js'
 
+// ID: Funzione per ottenere il parametro ID dall'URL
+function getIdFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('id');
+}
 
-// SELECT FROM DOM
-const cardGallery = find('.card-gallery');
-const searchInput = find('.search-input');
+// SELECT FROM DOM: individua gli elementi dal DOM
+const detailsList = find('.details-list');
+const detailsSeries = find('.details-series'); // Creazione di detailsSeries
+const detailsGeneral = find('.details-general');
+const detailsSeasons = find('.details-season-box');
+const detailsCast = find('.details-cast-box');
 
-
-// API
+// API: legenda per la composizione dell'url dell'API
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_TOKEN = '54ba07b69851b27c129da3059e6156a7';
 const TYPE = 'tv';
-const TIME_FRAME = 'week';
+const TV_ID = getIdFromUrl(); // Recupera l'ID dall'URL
 
-
-
-
-
-
-// TV CARD
-// Definisce una funzione createTvCard che crea e restituisce un elemento card per una serie TV.
-const createTvCard = (tv) => {
-    const { poster_path, name, id, genre_ids, overview } = tv; // Destruttura le proprietà dell'oggetto tv
-  
-    const card = createEl('li'); // Crea un elemento <li> per la card
-    card.className = 'card'; // Aggiunge la classe 'card' all'elemento
-  
-    // Crea elementi per l'immagine, il titolo, l'ID, il genere e la descrizione della serie TV
-    const imageEl = Image({ src: `https://image.tmdb.org/t/p/original/${poster_path}`, className: 'card-image' });
-    const titleEl = Text({ text: name, className: 'card-title' });
-    const idEl = Text({ text: id.toString(), className: 'card-id' });
-    const genreEl = Text({ text: '', className: 'card-genre' });
-    const descEl = Text({ text: overview, className: 'card-description' });
-  
-    // Ottiene i nomi dei generi corrispondenti agli ID specificati e li aggiunge all'elemento del genere
-    getGenresByIds(genre_ids).then((genreNames) => {
-      genreEl.textContent = genreNames.join(', '); // Imposta il testo dell'elemento del genere con i nomi dei generi separati da virgola
-    });
-  
-    card.addEventListener('click', () => openDetailsPage(tv)); // Aggiungi l'event listener per il click
-  
-    // Aggiunge gli elementi alla card e la restituisce
-    card.append(imageEl, titleEl, idEl, genreEl, descEl);
-    return card;
-  };
-  
-  
-  
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Ottiene i parametri dalla query string
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const title = decodeURIComponent(params.get('title'));
-    const image = decodeURIComponent(params.get('image'));
-    const description = decodeURIComponent(params.get('description'));
-    const genres = JSON.parse(decodeURIComponent(params.get('genres')));
-  
-    // Popola la pagina con i dettagli della serie TV
-    const titleEl = document.querySelector('.details-title');
-    const imageEl = document.querySelector('.details-image');
-    const descEl = document.querySelector('.details-description');
-    const genreEl = document.querySelector('.details-genre');
-  
-    titleEl.textContent = title;
-    imageEl.src = `https://image.tmdb.org/t/p/original/${image}`;
-    descEl.textContent = description;
-  
-    getGenresByIds(genres).then((genreNames) => {
-      genreEl.textContent = `Genres: ${genreNames.join(', ')}`;
-    });
-  });
-  
-    // FETCH API
-  // Effettua una richiesta API per ottenere le serie TV in tendenza e aggiunge le relative card alla galleria.
-  fetch(`${BASE_URL}/trending/${TYPE}/${TIME_FRAME}?api_key=${API_TOKEN}`)
-    .then((res) => res.json()) // Converte la risposta in formato JSON
+// CAST: Funzione per ottenere il cast e aggiungere i nomi dei membri alla costante castEl
+function getCastDetails() {
+  fetch(`${BASE_URL}/${TYPE}/${TV_ID}/credits?api_key=${API_TOKEN}`)
+    .then((response) => response.json())
     .then((data) => {
-      const cards = data.results; // Ottiene le serie TV in tendenza
-      cards.forEach((tv) => { // Per ogni serie TV
-        const card = createTvCard(tv); // Crea una card TV
-        cardGallery.append(card); // Aggiunge la card alla galleria
-      });
+      const castEl = Text({ text: `Cast: ${data.cast.map((member) => member.name).join(', ')}`, className: 'details-cast' }); // Crea un elemento di testo con i nomi del cast
+      detailsCast.append(castEl); // Aggiungi l'elemento di testo al dettaglio del cast
     })
     .catch((error) => {
-      console.error('Error:', error);
+      console.error('Error fetching cast details:', error);
     });
+}
+
+// CREATETVDETAILS: crea una funzione contenente tutte le informazioni dettaglio
+const createTvDetails = ({ poster_path, name, genres, vote_average, languages, networks, number_of_seasons, number_of_episodes, overview, seasons } = {}) => {
+  const imageEl = Image({ src: `https://image.tmdb.org/t/p/w500${poster_path}`, className: 'details-image', alt: 'TV Show Poster' });
+  const titleEl = Title({ text: name, className: 'details-title' }); // Corretto il nome della classe
+  const genreEl = Text({ text: `Genres: ${genres.map(genre => genre.name).join(', ')}`, className: 'details-genre' }); // Corretto il nome della classe
+  const voteEl = Text({ text: `Rating: ${Math.round(vote_average * 10) / 10}/10`, className: 'details-rating' }); // Corretto il nome della classe
+  const languageEl = Text({ text: `Languages: ${languages.join(', ')}`, className: 'details-language' }); // Corretto il nome della classe
+  const networkEl = Text({ text: `Streaming: ${networks.map(network => network.name).join(', ')}`, className: 'details-network' }); // Corretto il nome della classe
+  const seasonsEl = Text({ text: `Seasons: ${number_of_seasons}`, className: 'details-season' });
+  const episodesEl = Text({ text: `Episodes: ${number_of_episodes}`, className: 'details-episodes' });
+  const descriptionEl = Text({ text: overview, className: 'details-description' });
+
+  // Aggiunge le informazioni sulle stagioni
+  seasons.forEach(season => {
+    const seasonEl = createEl('div');
+    seasonEl.className = 'season-details';
+
+    const seasonImageEl = Image({ src: `https://image.tmdb.org/t/p/w500${season.poster_path}`, className: 'season-image', alt: `Season ${season.season_number} Poster` });
+    const seasonTitleEl = Title({ text: `Season: ${season.name}`, className: 'season-title' }); // Corretto il nome della classe
+    const episodeCountEl = Text({ text: `Episodes: ${season.episode_count}`, className: 'season-episode' });
+
+    seasonEl.append(seasonImageEl, seasonTitleEl, episodeCountEl);
+    detailsSeasons.append(seasonEl);
+  });
+
+  // Appende tutto nell'ordine corretto
+  detailsGeneral.append(titleEl, genreEl, voteEl, languageEl, networkEl, seasonsEl, episodesEl, descriptionEl, detailsCast);
+  detailsSeries.append(imageEl, detailsGeneral);
+  detailsList.append(detailsSeries, detailsSeasons);
+  return detailsList;
+};
+
+// API: Chiamata per avere i dettagli sulla serie tv
+fetch(`${BASE_URL}/${TYPE}/${TV_ID}?api_key=${API_TOKEN}`) // Effettua una richiesta API
+  .then((response) => response.json()) // Converte la risposta in formato JSON
+  .then((data) => {
+    createTvDetails(data);
+    getCastDetails(); // Ottieni e inserisci i dettagli del cast
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });

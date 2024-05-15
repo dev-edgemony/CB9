@@ -3,6 +3,7 @@
 ************************************************************/
 @import url(reset.css);
 @import url(typography.css);
+@import url(details.css);
 
 
 header {
@@ -12,7 +13,7 @@ header {
     background-color: var(--black);
     box-shadow: 5px rgba(17,17,21,0.30);
     align-items: center;
-} 
+}
 
 .header-menu {
     display: flex;
