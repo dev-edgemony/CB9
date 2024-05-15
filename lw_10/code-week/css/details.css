@@ -1,0 +1,99 @@
+.details-series {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: no-wrap;
+    margin-bottom: 100px;
+}
+
+.details-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: var(--salmon);
+}
+
+.details-image {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.details-general p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--light);
+    font-weight: 400;
+}
+
+/* .details-description {
+    text-indent: -25px;
+    margin-left: 25px;
+} */
+
+.details-cast, .details-description {
+    margin-top: 50px;
+    border-top: solid 2px var(--light);;
+    padding-top: 50px;
+}
+
+.details-general p::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--light);
+    font-weight: 600;
+}
+.details-rating::before {
+    content: "\f005";
+}
+.details-genre::before {
+    content: "\f02b";
+}
+.details-language::before {
+    content: "\f7a2";
+}
+.details-network::before {
+    content: "\f26c";
+}
+.details-season::before {
+    content: "\e131";
+}
+.details-episodes::before {
+    content: "\f144";
+}
+.details-description::before {
+    content: "\f044";
+}
+.details-cast::before {
+    content: "\f500";
+}
+
+.details-season-box h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.details-season-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.season-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.season-image{
+    max-width: 200px;
+    height: auto;
+}
+.season-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+.season-episode {
+    font-size: 14px;
+    font-weight: 200;
+}
