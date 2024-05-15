@@ -76,17 +76,18 @@
 .details-season-box {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+    /* justify-content: space-evenly; */
+    gap: 20px;
     flex-wrap: wrap;
 }
 .season-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 200px;
 }
 .season-image{
-    max-width: 200px;
+    width: 100%;
     height: auto;
 }
 .season-title {
