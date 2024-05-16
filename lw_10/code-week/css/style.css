@@ -1,6 +1,3 @@
-/***********************************************************
-    IMPORT
-************************************************************/
 @import url(reset.css);
 @import url(typography.css);
 @import url(details.css);
@@ -45,7 +42,6 @@ header {
     font-size: 19px;
 }
 
-
 .search-input {
     display: inline-block;
     position: relative;
@@ -67,7 +63,6 @@ header {
     border-radius: 0;
 }
 
-
 .fa-solid {
     position: relative;
     z-index: 1;
@@ -79,9 +74,12 @@ header {
 }
 
 .card-gallery {
+    display: flex;
     flex-direction: column;
-    /* align-items: ; */
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .card-gallery li {
@@ -116,11 +114,13 @@ header {
 .card-id {
     display: none;
 }
+
 .card-genre {
     margin-bottom: 15px;
     color: var(--light);
     font-weight: 600;
 }
+
 .card-genre::before {
     content: "\f02b";
     font-family: "Font Awesome 5 Free";
@@ -171,73 +171,47 @@ footer a:hover {
 }
 
 
-
-
 @media (min-width: 600px) {
-    .card-gallery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
+    .header-menu {
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        list-style: none;
+    }
+
+    .card-gallery {
+        flex-direction: row;
     }
     
     .card-gallery li {
         width: 250px;
     }
+
     footer {
-        display: flex;
         flex-direction: row;
-        justify-content: left;
-        gap: 5%;
-        padding: 1% 5%;
-        background-color: var(--black);
-        box-shadow: 5px rgba(17,17,21,0.30);
-        align-items: center;
     }
+
     footer .logo {
         width: 30%;
         height: auto;
     }
 }
+
+
 @media (min-width: 1050px) {
     .card-gallery {
-        display: flex;
-        justify-content: center;
         gap: 10px;
-        flex-wrap: wrap;
-        list-style: none;
     }
-    
-    .card-gallery li {
-        width: 250px;
+        
+    header {
+        flex-direction: row;
     }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2% 5%;
-    background-color: var(--black);
-    box-shadow: 5px rgba(17,17,21,0.30);
-    align-items: center;
-}
+    .header-menu {
+        flex-wrap: nowrap;
+        padding-bottom: 5px;
+    }
 
-.header-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 30px; 
-    list-style: none;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding-bottom: 5px;
-}
-
-footer .logo {
-    width: 10%;
-    height: auto;
-}
-
+    footer .logo {
+        width: 10%;
+        height: auto;
+    }
 }
