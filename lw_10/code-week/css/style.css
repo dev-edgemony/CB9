@@ -8,6 +8,7 @@
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 2% 5%;
     background-color: var(--black);
@@ -17,10 +18,13 @@ header {
 
 .header-menu {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px; 
     list-style: none;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .header-menu li a {
@@ -75,15 +79,14 @@ header {
 }
 
 .card-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    list-style: none;
+    flex-direction: column;
+    /* align-items: ; */
+    gap: 20px;
 }
 
 .card-gallery li {
-    width: 18%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .card  {
@@ -95,7 +98,7 @@ header {
     transition: all 250ms ease-in-out;    
 }
 
-.card:hover  {
+.card:hover, .card:focus, .card:active  {
     background-color: var(--red);
 }
 
@@ -135,6 +138,7 @@ header {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: left;
     gap: 5%;
     padding: 1% 5%;
@@ -144,7 +148,7 @@ footer {
 } 
 
 footer .logo {
-    width: 10%;
+    width: 40%;
     height: auto;
 }
 
@@ -164,4 +168,76 @@ footer a {
 footer a:hover {
     color: var(--red);
     text-decoration: none;
+}
+
+
+
+
+@media (min-width: 600px) {
+    .card-gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    
+    .card-gallery li {
+        width: 250px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 5%;
+        padding: 1% 5%;
+        background-color: var(--black);
+        box-shadow: 5px rgba(17,17,21,0.30);
+        align-items: center;
+    }
+    footer .logo {
+        width: 30%;
+        height: auto;
+    }
+}
+@media (min-width: 1050px) {
+    .card-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    
+    .card-gallery li {
+        width: 250px;
+    }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 5%;
+    background-color: var(--black);
+    box-shadow: 5px rgba(17,17,21,0.30);
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px; 
+    list-style: none;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+}
+
+footer .logo {
+    width: 10%;
+    height: auto;
+}
+
 }

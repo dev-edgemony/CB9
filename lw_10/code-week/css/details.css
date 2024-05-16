@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     margin-bottom: 100px;
+    justify-content: left;
 }
 
 .details-title {
@@ -13,14 +14,19 @@
 }
 
 .details-image {
-    max-width: 400px;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
 
+.details-general {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
 .details-general p {
     font-size: 16px;
-    margin-bottom: 10px;
     color: var(--light);
     font-weight: 400;
 }
@@ -76,7 +82,7 @@
 .details-season-box {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -84,7 +90,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 200px;
+    width: 40%;
 }
 .season-image{
     width: 100%;
@@ -97,4 +103,39 @@
 .season-episode {
     font-size: 14px;
     font-weight: 200;
+}
+
+@media (min-width: 600px) {
+    .details-image {
+        max-width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media (min-width: 900px) {
+    .details-series {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        flex-wrap: no-wrap;
+        margin-bottom: 100px;
+        justify-content: left;
+    }
+    .details-general {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: left;
+    }
+    .details-image {
+        max-width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    .season-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 200px;
+    }
 }
