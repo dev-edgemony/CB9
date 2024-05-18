@@ -59,12 +59,14 @@ function openPopup(
   company
 ) {
   var contentPopup = "<h1>" + name + "</h1>";
-  contentPopup += "<p>" + phone + "</p>";
-  contentPopup += "<p>" + username + "</p>";
-  contentPopup += "<p>" + address.street + " " + address.city + "</p>";
-  contentPopup += "<p>" + email + "</p>";
-  contentPopup += "<p>" + website + "</p>";
-  contentPopup += "<p>" + company.name + " " + company.bs + "</p>";
+  contentPopup += "<p>" + " Phone: " + phone + "</p>";
+  contentPopup += "<p>" + " Username: " + username + "</p>";
+  contentPopup +=
+    "<p>" + " Addess: " + address.street + " , " + address.city + "</p>";
+  contentPopup += "<p>" + " Mail: " + email + "</p>";
+  contentPopup += "<p>" + " Website: " + website + "</p>";
+  contentPopup +=
+    "<p>" + " Company: " + company.name + " , " + company.bs + "</p>";
 
   var popup = window.open("", "", "width=400,height=300");
 

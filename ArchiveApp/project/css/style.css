@@ -1,0 +1,43 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/search.css");
+
+html {
+  font-family: Helvetica;
+}
+
+.main--title {
+  font-size: 30px;
+  font-family: sans-serif;
+  justify-content: center;
+  display: flex;
+  color: #ff6060;
+}
+
+body {
+  background-color: rgb(250, 235, 208);
+  cursor: pointer;
+}
+
+.button {
+  height: 30px;
+  border-radius: 5px;
+  justify-content: right;
+  border: 1px solid rgb(0, 0, 0);
+  gap: 40px;
+}
+
+.search--bar {
+  background-image: url("https://unpkg.com/css.gg@2.0.0/icons/css/search.css");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 130px;
+  padding: 12px 20px 12px 10px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user--name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

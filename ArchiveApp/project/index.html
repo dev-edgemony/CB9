@@ -8,8 +8,21 @@
     <script src="./js/App.js" type="module"></script>
   </head>
   <body>
-    <header class="main--title">ARCHIVE---ME</header>
-    <section class="root"></section>
+    <header class="main--title">ARCHIVE ME</header>
+    <section class="root">
+      <input
+        type="text"
+        class="search--bar"
+        onkeyup="searchFunction()"
+        placeholder="Search contact.."
+      />
+      <input
+        type="text"
+        class="addNew"
+        onkeyup="addContactFunction()"
+        placeholder="Add new contact"
+      />
+    </section>
     <footer></footer>
   </body>
 </html>
