@@ -1,4 +1,5 @@
 import userEl from "./users.js";
+import { createEl, querySe, log } from "./helpers.js";
 
 const heroElGen = (titleContent, subTitleContent) => {
   const heroEl = document.createElement("div");
@@ -13,6 +14,27 @@ const heroElGen = (titleContent, subTitleContent) => {
   heroEl.append(titleEl, subTitleEl);
 
   return heroEl;
+};
+
+const searchBarEl = () => {
+  const searchEl = createEl("form");
+  const searchInput = createEl("input");
+  const searchBtn = createEl("button");
+
+  searchEl.className = "search-element";
+  searchInput.type = "text";
+  searchInput.placeholder = "Search..";
+  searchBtn.type = "submit";
+  searchBtn.className = "button";
+  searchBtn.value =
+    " https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid ";
+
+  searchEl.append(searchInput, searchBtn);
+  searchInput.addEventListener("keyup", (event) => {
+    const searchUser = event.target.value.toLowerCase();
+    filterContacts(searchUser);
+  });
+  return searchEl;
 };
 
 const listElGen = () => {
@@ -38,6 +60,7 @@ const addItemElGen = () => {
   const inputPhoneEl = document.createElement("input");
   const inputAddressEl = document.createElement("input");
   const inputSubmitEl = document.createElement("input");
+  const checkboxActiveEl = createEl("input");
 
   formEl.className = "add-item-form";
   inputNameEl.type = "text";
@@ -48,7 +71,17 @@ const addItemElGen = () => {
   inputAddressEl.placeholder = "Address";
   inputSubmitEl.type = "submit";
   inputSubmitEl.value = "Add New Contact";
-  formEl.append(inputNameEl, inputPhoneEl, inputAddressEl, inputSubmitEl);
+  checkboxActiveEl.type = "checkbox";
+  checkboxActiveEl.id = "activeCheckbox";
+  checkboxActiveEl.label = "Active";
+
+  formEl.append(
+    inputNameEl,
+    inputPhoneEl,
+    inputAddressEl,
+    inputSubmitEl,
+    checkboxActiveEl
+  );
 
   return formEl;
 };
@@ -58,6 +91,7 @@ const rootEl = document.querySelector("#root");
 const heroEl = heroElGen("Contact LIST APP", "Archive your contacts");
 const addItemEl = addItemElGen();
 const listEl = listElGen();
+const searchEl = searchBarEl();
 
 const contactsList = (function () {
   let _contacts = [];
@@ -103,7 +137,7 @@ fetch(`${BASE_URL}/${urlSpec}`)
     listEl.dispatchEvent(contactsUpdatedEvent);
   });
 
-rootEl.append(heroEl, addItemEl, listEl);
+rootEl.append(heroEl, addItemEl, listEl, searchEl);
 const contactsUpdatedEvent = new Event("contactsUpdated");
 listEl.addEventListener("contactsUpdated", () => {
   listEl.textContent = "";
@@ -112,6 +146,22 @@ listEl.addEventListener("contactsUpdated", () => {
     listEl.append(listItemElGen(contact.name + "  :  " + contact.phone))
   );
 });
+
+function filterContacts(searchUser, activeStatus) {
+  const sortedContacts = contactsList.get();
+  let filteredContacts = sortedContacts.filter((contact) => {
+    const nameMatch = contact.name.toLowerCase().includes(searchUser);
+    const activeMatch =
+      activeStatus === null || contact.isActive === activeStatus;
+    return nameMatch && activeMatch;
+  });
+
+  listEl.textContent = "";
+
+  filteredContacts.forEach((contact) =>
+    listEl.append(listItemElGen(contact.name + "  :  " + contact.phone))
+  );
+}
 
 addItemEl.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -138,6 +188,7 @@ addItemEl.addEventListener("submit", (event) => {
       catchPhrase: "_",
       bs: "_",
     },
+    isActive: checkboxActive.checked,
   };
   contactsList.push(newUser);
   contactsList.sort();
@@ -173,7 +224,7 @@ listEl.addEventListener("click", (event) => {
 
       var popup = window.open("", "", "width=400,height=300");
 
-      console.log(popup);
+      popup.document.body.className = "popup";
 
       popup.document.body.innerHTML = contentPopup;
 
@@ -181,6 +232,7 @@ listEl.addEventListener("click", (event) => {
     }
   }
 });
+
 contactsList
   .get()
   .forEach((contact) =>

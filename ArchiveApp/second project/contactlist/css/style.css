@@ -2,6 +2,12 @@ html {
   font-family: Helvetica;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h3 {
   margin: 0;
@@ -19,6 +25,11 @@ body {
   width: 70%;
   margin: 40px auto;
   background-color: rgb(252, 216, 150);
+}
+@media only screen and (max-width: 767px) {
+  #root {
+    width: 90vw;
+  }
 }
 
 .hero {
@@ -46,7 +57,7 @@ body {
 }
 
 .add-item-form input {
-  padding-left: 10px;
+  padding: 5px;
   height: 30px;
   border: 1px solid #3b46e6;
   border-radius: 6px;
@@ -80,12 +91,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 6px 10px;
-  width: 240px;
+  width: 80%;
   height: 50px;
-  background-color: #74a0f0;
+  background-color: #ffffff;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 6px;
-  color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-family: Helvetica;
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.367);
   text-align: center;
   cursor: pointer;
@@ -105,6 +118,37 @@ body {
   color: #ffffff;
 }
 
-.popup-window {
-  background-color: rgb(255, 248, 184);
+.popup {
+  background-color: #dcf598;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-element {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border: 1px solid;
+  display: flex;
+}
+
+.search-element button {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding-left: 25px;
+  background-image: url(/contactlist/img/magnifying-glass-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.search-element button:hover {
+  background-color: #ff5454;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-element {
+    top: 20px;
+    left: 10px;
+  }
 }
