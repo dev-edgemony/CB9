@@ -7,6 +7,9 @@ h3 {
   margin: 0;
 }
 
+body {
+  background-color: rgb(240, 180, 101);
+}
 #root {
   display: flex;
   flex-direction: column;
@@ -15,6 +18,7 @@ h3 {
   gap: 40px;
   width: 70%;
   margin: 40px auto;
+  background-color: rgb(252, 216, 150);
 }
 
 .hero {
@@ -23,11 +27,14 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: rgb(240, 180, 101);
+  padding-top: 20px;
+  margin-top: 40px;
 }
 
 .title,
 .subtitle {
-  color: #f3581b;
+  color: #020100;
 }
 
 .add-item-form {
@@ -41,21 +48,21 @@ h3 {
 .add-item-form input {
   padding-left: 10px;
   height: 30px;
-  border: 1px solid #0678be;
+  border: 1px solid #3b46e6;
   border-radius: 6px;
   color: #0678be;
-  font-family: "Neucha", cursive;
+  font-family: Helvetica;
   outline: none;
 }
 
 .add-item-form input[type="submit"] {
-  background-color: #0678be;
+  background-color: #3b46e6;
   color: #ffffff;
   cursor: pointer;
 }
 
 .add-item-form input[type="submit"]:active {
-  background-color: #00578e;
+  background-color: #3b46e6;
 }
 
 .contact-list {
@@ -72,10 +79,11 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 6px 10px;
   width: 240px;
   height: 50px;
-  background-color: #0678be;
+  background-color: #74a0f0;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 6px;
   color: #ffffff;
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.367);
@@ -93,6 +101,10 @@ h3 {
 }
 
 .contact-item:hover {
-  background-color: #e5652f;
+  background-color: #3b46e6;
   color: #ffffff;
+}
+
+.popup-window {
+  background-color: rgb(255, 248, 184);
 }

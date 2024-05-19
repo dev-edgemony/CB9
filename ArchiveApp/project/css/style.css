@@ -26,12 +26,11 @@ body {
 }
 
 .search--bar {
-  background-image: url("https://unpkg.com/css.gg@2.0.0/icons/css/search.css");
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 130px;
   padding: 12px 20px 12px 10px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -7,6 +7,9 @@ const buttonEl = createEl("button");
 buttonEl.className = "button";
 buttonEl.textContent = " + ";
 buttonEl.addEventListener("click", function () {
+  const inputElement = querySe(".addNew");
+  const newContact = inputElement.value.trim();
+  clearPage();
   const BASE_URL = "https://jsonplaceholder.typicode.com";
   const urlSpec = "users";
   fetch(`${BASE_URL}/${urlSpec}`)
@@ -22,14 +25,14 @@ buttonEl.addEventListener("click", function () {
         }
       });
       items = data;
-      let newItem = userEl("11");
-      newItem.id = "11";
+      let newItem = { id: "11" };
+      newItem.name = newContact;
       log(newItem);
       items.push(newItem);
       items.map((user) => {
         const userCard = userEl(user);
 
-        rootEl.append(userCard);
+        document.body.appendChild(userCard);
       });
     });
 });
@@ -58,3 +61,9 @@ fetch(`${BASE_URL}/${urlSpec}`)
       rootEl.append(userCard);
     });
   });
+function clearPage() {
+  const element = document.body.querySelector("user--name");
+  if (element) {
+    document.body.removeChild(element);
+  }
+}

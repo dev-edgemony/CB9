@@ -1,22 +1,5 @@
 import userEl from "./users.js";
 
-const dataModule = (function () {
-  let myArray = [];
-
-  function addData(data) {
-    myArray.push(data);
-  }
-
-  function getData() {
-    return myArray;
-  }
-
-  return {
-    addData,
-    getData,
-  };
-})();
-
 const heroElGen = (titleContent, subTitleContent) => {
   const heroEl = document.createElement("div");
   const titleEl = document.createElement("h1");
@@ -70,80 +53,109 @@ const addItemElGen = () => {
   return formEl;
 };
 
-let listcontactsData = [];
-
-//adding elements from fetch
-
-const BASE_URL = "https://jsonplaceholder.typicode.com";
-const urlSpec = "users";
-await fetch(`${BASE_URL}/${urlSpec}`)
-  .then((res) => res.json())
-  .then((data) => {
-    data.sort((a, b) => {
-      if (a.name < b.name) {
-        return -1;
-      } else if (a.name > b.name) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-
-    data.map((user) => {
-      dataModule.addData(user);
-      listcontactsData.push(user.name + "  :  " + user.phone);
-    });
-  });
-
 const rootEl = document.querySelector("#root");
 
 const heroEl = heroElGen("Contact LIST APP", "Archive your contacts");
 const addItemEl = addItemElGen();
 const listEl = listElGen();
 
-listcontactsData.map((contact) => listEl.append(listItemElGen(contact)));
+const contactsList = (function () {
+  let _contacts = [];
+
+  function push(data) {
+    _contacts.push(data);
+  }
+
+  function get() {
+    return _contacts;
+  }
+
+  function sort() {
+    _contacts.sort(compareContacts);
+  }
+
+  function compareContacts(a, b) {
+    const aname = a.name.toLowerCase();
+    const bname = b.name.toLowerCase();
+    if (aname < bname) return -1;
+    if (aname > bname) return 1;
+    return 0;
+  }
+
+  return {
+    push,
+    get,
+    sort,
+  };
+})();
+
+//adding elements from fetch
+
+const BASE_URL = "https://jsonplaceholder.typicode.com";
+const urlSpec = "users";
+fetch(`${BASE_URL}/${urlSpec}`)
+  .then((res) => res.json())
+  .then((data) => {
+    data.forEach((user) => {
+      contactsList.push(user);
+    });
+    contactsList.sort();
+    listEl.dispatchEvent(contactsUpdatedEvent);
+  });
+
 rootEl.append(heroEl, addItemEl, listEl);
+const contactsUpdatedEvent = new Event("contactsUpdated");
+listEl.addEventListener("contactsUpdated", () => {
+  listEl.textContent = "";
+  const sortedContacts = contactsList.get();
+  sortedContacts.forEach((contact) =>
+    listEl.append(listItemElGen(contact.name + "  :  " + contact.phone))
+  );
+});
 
 addItemEl.addEventListener("submit", (event) => {
   event.preventDefault();
   const inputNameValue = event.target[0];
   const inputPhoneValue = event.target[1];
+  const inputAddressValue = event.target[2];
   const newUser = {
     id: "11",
     name: inputNameValue.value,
     phone: inputPhoneValue.value,
     address: {
-      street: "Kulas Light",
-      suite: "Apt. 556",
-      city: "Gwenborough",
-      zipcode: "92998-3874",
+      street: inputAddressValue.value,
+      suite: "_",
+      city: "_",
+      zipcode: "_",
       geo: {
-        lat: "-37.3159",
-        lng: "81.1496",
+        lat: "_",
+        lng: "_",
       },
     },
-    website: "hildegard.org",
+    website: "_",
     company: {
-      name: "Romaguera-Crona",
-      catchPhrase: "Multi-layered client-server neural-net",
-      bs: "harness real-time e-markets",
+      name: "_",
+      catchPhrase: "_",
+      bs: "_",
     },
   };
-  dataModule.addData(newUser);
+  contactsList.push(newUser);
+  contactsList.sort();
   listEl.textContent = "";
-  listcontactsData.push(inputNameValue.value + "  :  " + inputPhoneValue.value);
-  listcontactsData.map((contact) => listEl.append(listItemElGen(contact)));
+  contactsList
+    .get()
+    .forEach((contact) =>
+      listEl.append(listItemElGen(contact.name + "  :  " + contact.phone))
+    );
   inputNameValue.value = "";
   inputPhoneValue.value = "";
+  inputAddressValue.value = "";
 });
 
 listEl.addEventListener("click", (event) => {
   const contactItemName = event.target.textContent;
-  for (let e of dataModule.getData()) {
-    console.log("@@@@" + e.name);
+  for (let e of contactsList.get()) {
     if (contactItemName.startsWith(e.name)) {
-      console.log("found ! " + contactItemName);
-
       var contentPopup = "<h1>" + e.name + "</h1>";
       contentPopup += "<p>" + " Phone: " + e.phone + "</p>";
       contentPopup += "<p>" + " Username: " + e.username + "</p>";
@@ -169,3 +181,8 @@ listEl.addEventListener("click", (event) => {
     }
   }
 });
+contactsList
+  .get()
+  .forEach((contact) =>
+    listEl.append(listItemElGen(contact.name + "  :  " + contact.phone))
+  );
