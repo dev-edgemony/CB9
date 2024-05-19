@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  font-family: "Architects Daughter", cursive;
+  background-color: #ddf4ee;
+  border: 2px solid white;
+  background-image: url("/Unsplash_Gallery_Explorer/assets/13268.jpg");
+}
+
+/* home page */
+
+.home--wrapper {
+  background-image: url("/Unsplash_Gallery_Explorer/assets/front-view-girl-taking-photos.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.home--image {
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.home--button {
+  font-family: "Architects Daughter", cursive;
+  height: 60px;
+  width: 100px;
+  font-size: 20px;
+  background-color: #8ad6a2;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.35s ease-in;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.home--button:hover {
+  background-color: #a0fa9d;
+}
+
+.home--main,
+.home--second {
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  margin: 20px;
+}
+
+.home--main {
+  font-size: 70px;
+}
+
+.home--second {
+  font-size: 50px;
+}
+
+/* Nav Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+}
+
+.search--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search--title {
+  margin-right: 10px;
+}
+
+.search--field {
+  font-family: "Architects Daughter", cursive;
+  height: 30px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 4px;
+  margin-right: 10px;
+  border: 3px solid #8ad6a2;
+  color: #2c673f;
+}
+
+.button {
+  font-family: "Architects Daughter", cursive;
+  width: 50px;
+  height: 30px;
+  background-color: #8ad6a2;
+  box-shadow: 0px 0px 10px 0px rgb(141, 151, 71);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.4s;
+}
+
+.button:hover {
+  background-color: #a0fa9d;
+}
+
+.nav--wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar--title {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.nav--image {
+  height: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.navbar--list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar--list li {
+  border-radius: 4px;
+  padding: 7px;
+  background-color: #8ad6a2;
+  list-style-type: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgb(141, 151, 71);
+  transition: transform 0.35s ease-in;
+  transition: background-color 0.35s ease-in;
+  width: 120px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.navbar--list li:hover {
+  transform: scale(1.1);
+  background-color: #a0fa9d;
+}
+
+/* Images */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card--wrapper {
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.2);
+  transition: filter 0.35s;
+  transition: transform 0.35s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  filter: grayscale(0) contrast(1.2);
+  transform: scale(1.03);
+}
+
+/* Modal */
+
+.modal--wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 600px;
+  /* max-height: 400px; */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.modal--image {
+  width: 100%;
+  max-height: 500px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  filter: contrast(1.2);
+}
+
+.modal--author {
+  margin-bottom: 8px;
+}
+
+.modal--description {
+  margin: 8px 0px;
+}
+
+.modal--button {
+  font-family: "Architects Daughter", cursive;
+  background-color: #8ad6a2;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px;
+  border: none;
+  transition: background-color 0.4s;
+}
+
+.modal--button:hover {
+  background-color: #a0fa9d;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 767px) {
+  /* Home page */
+
+  .home--image {
+    height: 65px;
+  }
+
+  .home--button {
+    height: 24px;
+    width: 64px;
+    font-size: 10px;
+  }
+
+  .home--main,
+  .home--second {
+    margin: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    text-align: center;
+  }
+
+  .home--main {
+    font-size: 50px;
+  }
+
+  .home--second {
+    font-size: 20px;
+  }
+
+  /* Nav */
+
+  .nav--image {
+    height: 50px;
+  }
+
+  .navbar--list li {
+    width: 74px;
+    font-size: 12px;
+  }
+
+  .search--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .search--title {
+    font-size: 12px;
+    margin: 3px;
+  }
+
+  .search--field {
+    height: 18px;
+    width: 150px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .nav--wrapper {
+    flex-direction: column;
+  }
+
+  .navbar--title {
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .navbar--list li {
+    padding: 0px;
+    width: 70px;
+    height: 18px;
+    text-align: center;
+  }
+
+  /* Cards */
+
+  .card--wrapper {
+    width: 170px;
+    height: 290px;
+  }
+
+  /* Modal */
+
+  .modal--wrapper {
+    width: 75%;
+    padding: 10px;
+  }
+
+  .modal--image {
+    max-height: 300px;
+  }
+
+  .modal--author {
+    font-size: 14px;
+  }
+
+  .modal--description {
+    font-size: 14px;
+  }
+
+  .modal--button {
+    font-size: 12px;
+  }
+}
