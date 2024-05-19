@@ -188,7 +188,6 @@ addItemEl.addEventListener("submit", (event) => {
       catchPhrase: "_",
       bs: "_",
     },
-    isActive: checkboxActive.checked,
   };
   contactsList.push(newUser);
   contactsList.sort();
