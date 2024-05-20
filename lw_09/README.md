@@ -1,4 +1,4 @@
-# Coding Bootcamp 9 – Learning Week 9 – React
+# Coding Bootcamp 9 – Learning Week 9 – Recap
 
 > 2024/04/06 - 2024/05/09
 
