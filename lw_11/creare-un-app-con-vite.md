@@ -7,7 +7,7 @@ passo-passo su come iniziare un progetto React con Vite.
 ### 1. Prerequisiti
 
 Assicurati di avere Node.js e npm installati sul tuo computer. Puoi scaricarli
-da [nodejs.org](https://nodejs.org/).
+da [Nodejs.org](https://nodejs.org/).
 
 ### 2. Creazione del Progetto
 
@@ -16,11 +16,10 @@ Apri il terminale e segui questi passaggi:
 1. **Crea il progetto con Vite:**
 
    ```bash
-   npm create vite@latest edge-commerce --template react
+   npm create vite@latest edge-commerce -- --template react
    ```
 
    Questo comando crea un nuovo progetto Vite utilizzando il template per React.
-   Sostituisci `my-react-app` con il nome che preferisci per il tuo progetto.
 
 2. **Naviga nella directory del progetto:**
 
@@ -125,3 +124,10 @@ esperienza di sviluppo rispetto agli strumenti di build tradizionali come Create
 React App, specialmente per progetti di dimensioni medio-piccole.
 
 Buon divertimento con React e Vite!
+
+### Link per approfondire
+
+1. Guida per l'uso di [Vite](https://vitejs.dev/guide/) (in inglese)
+1. Virtual DOM nella
+   [documentazione React](https://legacy.reactjs.org/docs/faq-internals.html)
+   (in inglese)
