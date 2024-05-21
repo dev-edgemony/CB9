@@ -50,7 +50,7 @@ function displayMovieDetails(movie) {
     // immagine del film
     const image = createEl('img', { src: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`, alt: movie.title });
     // genere del film
-    const genre = createEl('p', { textContent: `Genere: ${movie.genres.map(g => g.name).join(', ')}` });
+    const genre = createEl('p', { textContent: `Genere: ${movie.genres.map(gen => gen.name).join(', ')}` });
     // descrizione del film
     const description = createEl('p', { textContent: movie.overview });
 

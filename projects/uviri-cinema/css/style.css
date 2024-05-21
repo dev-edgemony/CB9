@@ -1,11 +1,11 @@
-/* Reset di base per margini e padding */
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Usa Roboto per un look moderno */
-    background-color: #121212; /* Tema scuro per i servizi di streaming */
-    color: #ffffff; /* Testo bianco per leggibilità */
-    overflow-x: hidden; /* Previene lo scroll orizzontale */
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; 
+    color: #ffffff; 
+    overflow-x: hidden;
 }
 
 /* Stili per l'header e la barra di navigazione */
