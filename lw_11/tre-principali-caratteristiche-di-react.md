@@ -8,11 +8,10 @@ vantaggi e un esempio base per iniziare.
 
 ### Cos'è React?
 
-React si concentra principalmente sulla **View** (la V di MVC), cioè la parte
-dell'applicazione che gestisce ciò che l'utente vede e con cui interagisce.
-Utilizza una sintassi chiamata **JSX** (JavaScript XML), che permette di
-scrivere componenti usando una sintassi simile a HTML ma con la piena potenza di
-JavaScript.
+React si concentra principalmente sulla parte dell'applicazione che gestisce ciò
+che l'utente vede e con cui interagisce. Utilizza una sintassi chiamata **JSX**
+(JavaScript XML), che permette di scrivere componenti usando una sintassi simile
+a HTML ma con la piena potenza di JavaScript.
 
 ### Caratteristiche Principali
 
@@ -20,9 +19,10 @@ JavaScript.
    riutilizzabili. Ogni componente è una funzione o una classe JavaScript che
    può avere il proprio stato e comportamento.
 
-2. **Virtual DOM**: React utilizza un Virtual DOM per ottimizzare le operazioni
-   di aggiornamento del DOM reale. Quando lo stato di un componente cambia,
-   React crea un nuovo Virtual DOM e lo confronta con il precedente. Solo le
+2. **Virtual DOM**: React utilizza un
+   [Virtual DOM](./il-virtual-dom-di-react.md) per ottimizzare le operazioni di
+   aggiornamento del DOM reale. Quando lo stato di un componente cambia, React
+   crea un nuovo Virtual DOM e lo confronta con il precedente. Solo le
    differenze effettive vengono applicate al DOM reale, migliorando
    significativamente le performance.
 
