@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
-import MovieCard from "../MovieCard/MovieCard";
+import MovieCard from '../MovieCard/MovieCard'
 
-const MovieList = ({ movieList = [] }) => {
-  console.log(movieList);
-
+const MovieList = ({ children, movieList = [] }) => {
   return (
     <div className="movie-list">
+      {children}
       {movieList.map((movie, index) => {
         return (
           <MovieCard
@@ -16,10 +15,10 @@ const MovieList = ({ movieList = [] }) => {
             rating={movie.vote_average}
             categories={movie.categories}
           />
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default MovieList;
+export default MovieList
