@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import "./MovieCard.css";
-import { useState } from "react";
+import './MovieCard.css'
+import { useState } from 'react'
 
 const MovieCard = ({
   image,
@@ -10,7 +10,6 @@ const MovieCard = ({
   isHD,
   categories = [],
 }) => {
-
   const [isActive, setIsActive] = useState(false)
 
   const handleMouse = () => {
@@ -23,7 +22,8 @@ const MovieCard = ({
       onMouseLeave={handleMouse}
       className="movie-card"
     >
-      <img src={image} alt={""} className="card-image" />
+      <img src={image} alt={''} className="card-image" />
+      {/* conditional rendering */}
       {isActive && (
         <div className="card-info">
           <section className="info">
@@ -39,7 +39,7 @@ const MovieCard = ({
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default MovieCard;
+export default MovieCard
