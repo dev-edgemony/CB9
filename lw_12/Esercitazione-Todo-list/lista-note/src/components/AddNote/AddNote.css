@@ -1,0 +1,28 @@
+.box-input {
+  align-items: center;
+}
+
+.input-note {
+  background-color: antiquewhite;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  width: 50%;
+  padding: 8px;
+}
+.button-note {
+  background-color: rgba(243, 158, 55, 0.84);
+  border: none;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  transition: background-color 0.35s ease-in-out;
+  cursor: pointer;
+  height: 5%;
+}
+.button-note:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
