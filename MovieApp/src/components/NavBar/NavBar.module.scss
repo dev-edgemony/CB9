@@ -1,0 +1,19 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  .navList {
+    display: flex;
+    justify-content: space-between;
+    .navListItem {
+      margin: 10px;
+      list-style: none;
+      color: rgb(222, 175, 55);
+      cursor: pointer;
+      transition: all 0.25s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
