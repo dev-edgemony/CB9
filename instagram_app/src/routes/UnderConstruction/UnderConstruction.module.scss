@@ -1,0 +1,21 @@
+@use "../../assets/mixins";
+
+.underconstruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  h3 {
+    padding: 40px;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+  }
+
+  @include mixins.desktop() {
+    img {
+      height: 700px;
+      width: 900px;
+    }
+  }
+}

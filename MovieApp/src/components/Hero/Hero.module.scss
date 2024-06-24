@@ -1,0 +1,47 @@
+@import "../../assets/variables";
+
+.heroMain {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  height: 500px;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+
+  .heroTitle {
+    position: absolute;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.867);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.624);
+    flex-wrap: wrap;
+  }
+
+  .heroImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  .heroButton {
+    font-family: "Leckerli One", cursive;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: #fcf6eb;
+    border-radius: 2px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-size: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: rgb(55, 105, 158);
+      color: rgb(237, 235, 223);
+    }
+  }
+}
