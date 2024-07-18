@@ -1,0 +1,7 @@
+.robot {
+   border : 2px solid rgb(78, 78, 170);
+   border-radius: 6%;
+   box-shadow: 4px 8px 12px rgba(78, 78, 170, 0.608);
+   margin: 5px;
+
+}

@@ -1,0 +1,34 @@
+@import "../../assets/variables";
+
+.movieCardWrapper {
+  height: 320px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  background-color: rgb(237, 235, 222);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .movieCardImg {
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  .movieCardTitle {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(31, 30, 30);
+  }
+}

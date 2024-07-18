@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+#root {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  font-family: "Leckerli One", cursive;
+  font-style: normal;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(222, 175, 55) 0%,
+    rgba(171, 39, 39, 0.783) 50%,
+    rgb(47, 104, 158) 100%
+  );
+}
