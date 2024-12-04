@@ -1,0 +1,15 @@
+.navbarBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+  text-decoration: underline;
+}

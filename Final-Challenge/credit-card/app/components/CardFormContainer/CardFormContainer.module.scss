@@ -1,0 +1,79 @@
+@use "../../assets/mixins.module";
+
+.mainDiv {
+  width: 50%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100vh;
+
+  .alert {
+    font-weight: bold;
+    color: #1fa841;
+  }
+
+  .form {
+    width: 420px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    input {
+      @include mixins.form();
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .labelDiv {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 6px;
+    }
+
+    .labelDivDate {
+      display: flex;
+      width: 100%;
+      gap: 24px;
+
+      .labelDivDates {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 60%;
+        gap: 6px;
+
+        .inputDate {
+          display: flex;
+          gap: 6px;
+
+          input {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .button {
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      color: #f7f7f7;
+      font-size: 14px;
+      @include mixins.form();
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mainDiv {
+    width: 100%;
+  }
+
+  .form {
+    padding: 36px;
+  }
+}

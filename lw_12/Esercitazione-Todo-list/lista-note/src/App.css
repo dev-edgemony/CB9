@@ -1,0 +1,12 @@
+.box {
+  font-style: oblique;
+  font-size: larger;
+
+  text-align: center;
+}
+.titolo {
+  color: yellowgreen;
+  text-align: center;
+
+  font-style: italic;
+}
